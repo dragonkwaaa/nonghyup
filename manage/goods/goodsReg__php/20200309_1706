@@ -1,0 +1,587 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manage/common/pages/head.php';
+	$mCode					=	'02';
+	$lCode					=	'0202';
+?>
+<body>
+
+<div class="container">
+	<!-- gnb -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manage/common/pages/header.php'; ?>
+	<div class="wrapper">
+		<!-- lnb -->
+		<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manage/goods/pages/goodsLeft.php'; ?>
+		<div class="contents">
+			<!-- :: 탭 선택지 파트  -->
+			<div class="goodsTypeTab">
+				<ul class="horizList">
+					<li>
+						<a href="javascript:void(0);" class="selected">개별상품등록</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">묶음상품등록</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">일반상품등록</a>
+					</li>
+				</ul>
+			</div>
+
+
+
+			<!-- :: 기본 정보 파트 -->
+			<div class="set_field">
+				<div class="field_title">
+					<span class="title_mark">■ 상품정보</span>
+					<span class="f_main tip">(*)는 필수 입력 사항입니다.</span>
+				</div>
+				<table class="set_table">
+					<colgroup>
+						<col width="120">
+						<col width="*">
+					</colgroup>
+					<tbody>
+					<tr>
+						<th>
+							<span>상품카테고리</span>
+						</th>
+						<td>
+							<span class="sbox">
+								<select name="categoryIdx" id="category">
+								</select>
+							</span>
+							<span class="f_main ml15 alignV">* 미선택시 상품 카테고리는 "기타" 로 등록됩니다.</span>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span>상품명</span>
+							<span class="f_main">*</span>
+						</th>
+						<td><input class="tbox long" value="" name="goodsName"></td>
+					</tr>
+					<tr>
+						<th>간략설명</th>
+						<td>
+							<textarea class="textbox long" name="goodsInfo"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span>기본가격</span>
+							<span class="f_main">*</span>
+						</th>
+						<td>
+							<input class="tbox smallest" value="" name="goodsPrice">
+							<span>원</span>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span>재고</span>
+							<span class="f_main">*</span>
+						</th>
+						<td>
+							<input class="tbox smallest" value="" name="goodsStock">
+							<span>개</span>
+						</td>
+					</tr>
+					<tr>
+						<th>상품이미지</th>
+						<td>
+							<div class="f_main">* 권장 이미지 사이즈는 720*350 픽셀입니다.</div>
+							<div class="f_main">* 대표 이미지는 상품목록의 섬네일로 사용됩니다.</div>
+							<div class="f_main">* 섬네일을 클릭하면 큰 이미지가 표시됩니다.</div>
+							<div class="storeImgSmall">
+								<?php for($i = 1 ; $i <= 5 ; $i ++){ ?>
+								<div class="sizeFixImg">
+									<div class="imgUploadBox">
+										<input type="file" class="hide" accept="image/*" name="img_<?= $i?>" onchange="img_sel(this, event)">
+										<a href="javascript:void(0)" class="upload_btn" onclick="img_upload(this)"></a>
+									</div>
+								</div>
+								<?php } ?>
+							</div>
+							<div class="storeImgBig itemImgBig">
+								<div class="sizeFixImg">
+									<img class="hide" src="" alt="미리보기" id="showImg">
+								</div>
+							</div>
+						</td>
+					</tr>
+					<!--<tr>
+						<th>
+							<span>재고</span>
+							<span class="f_main">*</span>
+						</th>
+						<td>
+							<span>
+								<input class="tbox smallest" value="">
+								<span>개</span>
+							</span>
+						</td>
+					</tr>-->
+					<tr>
+						<th>
+							<span>상태</span>
+							<span class="f_main">*</span>
+						</th>
+						<td>
+							<label>
+								<input type="radio" name="goodsState" value="1" checked="">
+								<span>사용</span>
+							</label>
+							<label class="ml10">
+								<input type="radio" name="goodsState" value="0">
+								<span>미사용</span>
+							</label>
+							<label class="ml10">
+								<input type="radio" name="goodsState" value="2">
+								<span>품절</span>
+							</label>
+							<span class="f_main ml10">* 미사용 체크시 상품이 소비자의 화면에 표시되지 않습니다.</span>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span>기본옵션</span>
+							<span class="f_main">*</span>
+						</th>
+						<td>
+
+							<label class="ml10">
+								<input type="radio" name="isOpType1" value="1">
+								<span>사용</span>
+							</label>
+							<label class="ml10">
+								<input type="radio" name="isOpType1" value="0">
+								<span>미사용</span>
+							</label>
+
+
+							<div class="set_field">
+								<div class="field_title">
+									<span class="title_mark">■ 기본옵션추가</span>
+								</div>
+								<table class="set_table optionSet">
+									<thead>
+									<tr>
+										<th>
+											<label>
+												<input type="checkbox" name="all_chk">
+											</label>
+										</th>
+										<th>순서</th>
+										<th>옵션</th>
+										<th>옵션항목</th>
+										<th>옵션가격(원)</th>
+										<th>상태</th>
+										<th>관리</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>
+											<label>
+												<input type="checkbox" name="goods" value="<?=$goodsCode?>">
+											</label>
+										</td>
+										<td>
+											<input class="tbox full" value="" name="tmpOpOrder">
+										</td>
+										<td>
+											<input class="tbox full" value="" name="tmpOpName">
+										</td>
+										<td>
+											<input class="tbox full" value="" name="tmpOpInfo">
+										</td>
+										<td>
+											<input class="tbox full" value="" name="tmpOpPrice">
+										</td>
+										<td>
+											<div class="optStatChkBox">
+												<label>
+													<input type="radio" name="tmpOpState" value="1" checked>
+													<span>사용</span>
+												</label>
+											</div>
+											<div class="optStatChkBox">
+												<label>
+													<input type="radio" name="tmpOpState" value="0">
+													<span>미사용</span>
+												</label>
+											</div>
+											<div class="optStatChkBox">
+												<label>
+													<input type="radio" name="tmpOpState" value="2">
+													<span>품절</span>
+												</label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:setOpType1()" class="cateAdd_1 btn smaller higher col_main f_w">추가</a>
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="list_field optionList_1">
+								<div class="field_title">
+									<span class="title_mark">■ 기본옵션 리스트</span>
+								</div>
+								<div class="list_menu">
+									<span class="left_menu">
+										<a href="javascript:void(0)" class="btn col_grey">전체선택</a>
+										<a href="javascript:void(0)" class="btn col_grey">전체해제</a>
+										<a href="javascript:void(0)" class="btn col_darkGrey f_w">선택삭제</a>
+										<span class="sbox ml15">
+											<select id="isSale">
+												<option value="">- 선택 -</option>
+												<option value="">사용</option>
+												<option value="">미사용</option>
+												<option value="">품절</option>
+											</select>
+										</span>
+										<a href="javascript:void(0)" class="btn col_darkGrey f_w">상태변경</a>
+									</span>
+									<span class="right_menu">
+										<a href="javascript:void(0)" onclick="" class="btn col_darkGrey f_w">엑셀저장</a>
+										<span class="sbox small">
+											<select onchange="">
+												<option value="1">번호순 ▲</option>
+												<option value="2">번호순 ▼</option>
+												<option value="3">금액순 ▲</option>
+												<option value="4">금액순 ▼</option>
+											</select>
+										</span>
+										<span class="sbox small">
+											<select onchange="">
+												<option value="20">20개씩</option>
+												<option value="50">50개씩</option>
+												<option value="100">100개씩</option>
+											</select>
+										</span>
+									</span>
+								</div>
+								<table class="list_table optionSet" id="opTable1">
+									<thead>
+									<tr>
+										<th>
+											<label>
+												<input type="checkbox" name="goods" value="<?=$goodsCode?>">
+											</label>
+										</th>
+										<th>순서</th>
+										<th>옵션</th>
+										<th>옵션항목</th>
+										<th>옵션가격(원)</th>
+										<th>상태</th>
+										<th>관리</th>
+									</tr>
+									</thead>
+									<tbody id="opList1">
+									</tbody>	
+								</table>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>선택옵션</th>
+						<td>
+							<div class="set_field">
+								<div class="field_title">
+									<span class="title_mark">■ 선택옵션추가</span>
+								</div>
+
+								<label class="ml10">
+									<input type="radio" name="goodsStatus" value="">
+									<span>사용</span>
+								</label>
+								<label class="ml10">
+									<input type="radio" name="goodsStatus" value="">
+									<span>미사용</span>
+								</label>
+
+								<table class="set_table optionSet">
+									<thead>
+									<tr>
+										<th>
+											<label>
+												<input type="checkbox" name="goods" value="<?=$goodsCode?>">
+											</label>
+										</th>
+										<th>옵션</th>
+										<th>옵션항목</th>
+										<th>옵션가격(원)</th>
+										<th>상태</th>
+										<th>관리</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>
+											<label>
+												<input type="checkbox" name="goods" value="<?=$goodsCode?>">
+											</label>
+										</td>
+										<td>
+											<input class="tbox full" value="">
+										</td>
+										<td>
+											<input class="tbox full" value="">
+										</td>
+										<td>
+											<input class="tbox full" value="">
+										</td>
+										<td>
+											<div class="optStatChkBox">
+												<label>
+													<input type="radio" name="goodsStatus" value="" checked="">
+													<span>사용</span>
+												</label>
+											</div>
+											<div class="optStatChkBox">
+												<label>
+													<input type="radio" name="goodsStatus" value="">
+													<span>미사용</span>
+												</label>
+											</div>
+											<div class="optStatChkBox">
+												<label>
+													<input type="radio" name="goodsStatus" value="">
+													<span>품절</span>
+												</label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:void(0)" class="cateAdd_2 btn smaller higher col_main f_w">추가</a>
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="list_field optionList_2">
+								<div class="field_title">
+									<span class="title_mark">■ 선택옵션 리스트</span>
+								</div>
+								<div class="list_menu">
+									<span class="left_menu">
+										<a href="javascript:void(0)" class="btn col_grey">전체선택</a>
+										<a href="javascript:void(0)" class="btn col_grey">전체해제</a>
+										<a href="javascript:void(0)" class="btn col_darkGrey f_w">선택삭제</a>
+										<span class="sbox ml15">
+											<select id="isSale">
+												<option value="">- 선택 -</option>
+												<option value="">사용</option>
+												<option value="">미사용</option>
+												<option value="">품절</option>
+											</select>
+										</span>
+										<a href="javascript:void(0)" class="btn col_darkGrey f_w">상태변경</a>
+									</span>
+									<span class="right_menu">
+										<a href="javascript:void(0)" onclick="" class="btn col_darkGrey f_w">엑셀저장</a>
+										<span class="sbox small">
+											<select onchange="">
+												<option value="1">번호순 ▲</option>
+												<option value="2">번호순 ▼</option>
+												<option value="3">금액순 ▲</option>
+												<option value="4">금액순 ▼</option>
+											</select>
+										</span>
+										<span class="sbox small">
+											<select onchange="">
+												<option value="20">20개씩</option>
+												<option value="50">50개씩</option>
+												<option value="100">100개씩</option>
+											</select>
+										</span>
+									</span>
+								</div>
+								<table class="list_table optionSet">
+									<thead>
+									<tr>
+										<th>
+											<label>
+												<input type="checkbox" name="goods" value="<?=$goodsCode?>">
+											</label>
+										</th>
+										<th>순서</th>
+										<th>옵션</th>
+										<th>옵션항목</th>
+										<th>옵션가격(원)</th>
+										<th>상태</th>
+										<th>관리</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>
+											<label>
+												<input type="checkbox" name="goods" value="<?=$goodsCode?>">
+											</label>
+										</td>
+										<td>
+											<input class="tbox indexInput" value="1">
+										</td>
+										<td>
+											<input class="tbox full center" value="기본">
+										</td>
+										<td>
+											<input class="tbox full center" value="콜라">
+										</td>
+										<td>
+											<input class="tbox full center" value="12,000원">
+										</td>
+										<td>
+											<div class="optStatChkBox">
+												<label>
+													<input type="radio" name="goodsStatus" value="" checked="">
+													<span>사용</span>
+												</label>
+											</div>
+											<div class="optStatChkBox">
+												<label>
+													<input type="radio" name="goodsStatus" value="">
+													<span>미사용</span>
+												</label>
+											</div>
+											<div class="optStatChkBox">
+												<label>
+													<input type="radio" name="goodsStatus" value="">
+													<span>품절</span>
+												</label>
+											</div>
+										</td>
+										<td>
+											<span>
+												<a href="javascript:void(0);" class="btn small col_darkGrey f_w">삭제</a>
+
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="11">등록된 옵션이 없습니다.</td>
+									</tr>
+									</tbody>	
+								</table>
+							</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn_group">
+				<a href="javascript:void(0)" class="btn col_main">등록</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/nonghyup/manage/common/js/exif-js.js"></script>
+<script src="/nonghyup/manage/common/js/imgSet.js"></script>
+<script src="/nonghyup/manage/goods/js/goods.js"></script>
+<script>
+// :: 선택 옵션 추가 스크립트
+$(document).on('click', '.cateAdd_2', function(){
+
+var str 		=	'';
+
+	// str			+=	'<div class="menu_list">';
+
+	str			+=	'<tr>';
+	str			+=	'	<td>';
+	str			+=	'		<label>';
+	str			+=	'			<input type="checkbox" name="goods" value="<?=$goodsCode?>">';
+	str			+=	'		</label>';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<input class="tbox indexInput" value="1">';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<input class="tbox full center" value="">';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<input class="tbox full center" value="">';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<input class="tbox full center" value="">';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<div>';
+	str			+=	'			<input class="tbox smallest" value="">';
+	str			+=	'		</div>';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<div class="optStatChkBox">';
+	str			+=	'			<label>';
+	str			+=	'				<input type="radio" name="goodsStatus" value="" checked="">';
+	str			+=	'				<span>사용</span>';
+	str			+=	'			</label>';
+	str			+=	'		</div>';
+	str			+=	'		<div class="optStatChkBox">';
+	str			+=	'			<label>';
+	str			+=	'				<input type="radio" name="goodsStatus" value="">';
+	str			+=	'				<span>미사용</span>';
+	str			+=	'			</label>';
+	str			+=	'		</div>';
+	str			+=	'		<div class="optStatChkBox">';
+	str			+=	'			<label>';
+	str			+=	'				<input type="radio" name="goodsStatus" value="">';
+	str			+=	'				<span>품절</span>';
+	str			+=	'			</label>';
+	str			+=	'		</div>';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<span>';
+	str			+=	'			<a href="javascript:void(0);" class="btn small col_darkGrey f_w">삭제</a>';
+	str			+=	'		</span>';
+	str			+=	'	</td>';
+	str			+=	'</tr>';
+
+$('.optionList_2 .list_table tbody').append(str);
+});
+
+
+// :: 섬네일 클릭시 테두리에 색상 추가 
+$(document).on('click', '.storeImgSmall .sizeFixImg canvas', function(){
+	$('.storeImgSmall .imgUploadBox').removeClass('selected');
+	$(this).parent('.imgUploadBox').addClass('selected');
+});
+
+
+// :: 테이블 내 <tr> 태그 위로 이동 스크립트
+$(document).on('click', '.moveUp', function(){
+
+	let	$targetTr	=	$(this).closest('tr');
+
+	$targetTr.prev().before($targetTr);
+});
+
+// :: 테이블 내 <tr> 태그 아래로 이동 스크립트
+$(document).on('click', '.moveDown', function(){
+
+let	$targetTr	=	$(this).closest('tr');
+
+$targetTr.next().after($targetTr);
+});
+
+
+//  :: 페이징 스크립트
+$(document).on('click', '.page_group a',function(){
+	let pageGroup	=	$(this).parent('li.pageNum').siblings('li');
+	$(pageGroup).removeClass('on');
+	$(this).parent('li.pageNum').addClass('on');
+});
+
+
+
+
+
+
+// :: <농협> 상단 탭 스크립트
+$(document).on('click', '.goodsTypeTab a',function(){
+	$('.goodsTypeTab a').removeClass('selected');
+	$(this).addClass('selected');
+});
+</script>
+</body>
+</html>
