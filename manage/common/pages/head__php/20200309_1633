@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>ARS</title>
+
+	<!-- :: 파비콘(변경예정) -->
+	<link rel="shortcut icon" type="image/png" href="/common/img/icon_mapLocation.png">
+
+	<link type="text/css" rel="stylesheet" href="/nonghyup/manage/common/css/reset.css">
+	<link type="text/css" rel="stylesheet" href="/nonghyup/manage/common/css/style.css">
+
+	<!-- <script src="/visible_ars/nonghyup/manage/common/js/jquery-1.8.3.js"></script> -->
+	<script src="/nonghyup/manage/common/js/jquery-3.1.1.min.js"></script>
+	<script src="/nonghyup/manage/common/js/jquery-ui-1.12.1.js"></script>
+	<script src="/common/js/common.js"></script>
+</head>
+<body>
