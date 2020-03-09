@@ -1,0 +1,21 @@
+<header>
+	<!-- <h1 class="logo">
+		<a href="/nonghyup/manage/index.php" class="logo_btn">
+			<img src="/nonghyup/manager/common/img/icon_logo.png" alt="로고">
+		</a>
+	</h1> -->
+	<div class="nav_menu">
+		<a href="/nonghyup/manage/set" class="menu_btn <?=($mCode == '01' ? 'on' : '')?>">
+			<i class="ico set"></i>
+			<div class="menu_text">환경설정</div>
+		</a>
+		<a href="/nonghyup/manage/goods/category" class="menu_btn <?=($mCode == '02' ? 'on' : '')?>">
+			<i class="ico order"></i>
+			<div class="menu_text">상품관리</div>
+		</a>
+		<a href="/nonghyup/manage/order/" class="menu_btn <?=($mCode == '03' ? 'on' : '')?>">
+			<i class="ico order"></i>
+			<div class="menu_text">주문관리</div>
+		</a>
+	</div>
+</header>
