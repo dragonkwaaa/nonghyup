@@ -1,0 +1,411 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manage/common/pages/head.php';
+	$mCode					=	'02';
+	$lCode					=	'0202';
+?>
+<body>
+
+<div class="container">
+	<!-- gnb -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manage/common/pages/header.php'; ?>
+	<div class="wrapper">
+		<!-- lnb -->
+		<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manage/goods/pages/goodsLeft.php'; ?>
+		<div class="contents">
+			<!-- :: 탭 선택지 파트  -->
+			<div class="goodsTypeTab">
+				<ul class="horizList">
+					<li>
+						<a href="/nonghyup/manage/goods/goodsReg_partial" class="">개별상품등록</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="selected">묶음상품등록</a>
+					</li>
+					<li>
+						<a href="/nonghyup/manage/goods/goodsReg">일반상품등록</a>
+					</li>
+				</ul>
+			</div>
+
+
+
+			<!-- :: 기본 정보 파트 -->
+			<div class="set_field">
+				<div class="field_title">
+					<span class="title_mark">■ 상품정보</span>
+					<span class="f_main tip">(*)는 필수 입력 사항입니다.</span>
+				</div>
+				<table class="set_table">
+					<colgroup>
+						<col width="120">
+						<col width="*">
+					</colgroup>
+					<tbody>
+
+					<tr>
+						<th>
+							<span>묶음상품 리스트</span>
+							<span class="f_main">*</span>
+						</th>
+						<td colspan="5">
+							<a href="javascript:void(0)" class="groupItemBtn btn normal higher col_main f_w alignV">묶음상품 선택</a>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span>묶음상품명</span>
+							<span class="f_main">*</span>
+						</th>
+						<td colspan="5">
+							<input class="tbox long" value="" name="">
+							<span>[0/250]</span>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span>요약설명</span>
+							<span class="f_main">*</span>
+						</th>
+						<td colspan="5">
+							<input class="tbox long" value="" name="">
+							<span>[0/250]</span>
+						</td>
+					</tr>
+					<tr>
+						<th>상품이미지</th>
+						<td colspan="5">
+							<div class="f_main">* 권장 이미지 사이즈는 720*350 픽셀입니다.</div>
+							<div class="f_main">* 대표 이미지는 상품목록의 섬네일로 사용됩니다.</div>
+							<div class="f_main">* 섬네일을 클릭하면 큰 이미지가 표시됩니다.</div>
+							<div class="storeImgSmall">
+								<?php for($i = 1 ; $i <= 5 ; $i ++){ ?>
+								<div class="sizeFixImg">
+									<div class="imgUploadBox">
+										<input type="file" class="hide" accept="image/*" name="img_<?= $i?>" onchange="img_sel(this, event)">
+										<a href="javascript:void(0)" class="upload_btn" onclick="img_upload(this)"></a>
+									</div>
+								</div>
+								<?php } ?>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span>판매상태</span>
+							<span class="f_main">*</span>
+						</th>
+						<td colspan="5">
+							<label class="sellStatus">
+								<input type="radio" name="sellingStatus" value="0" checked>
+								<span>판매중</span>
+							</label>
+							<label class="sellStatus">
+								<input type="radio" name="sellingStatus" value="1">
+								<span>판매중단</span>
+							</label>
+							<label class="sellStatus">
+								<input type="radio" name="sellingStatus" value="2">
+								<span>품절</span>
+							</label>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span>재고</span>
+							<span class="f_main">*</span>
+						</th>
+						<td colspan="5">
+							<input class="tbox smallest" value="" name="">
+							<span>개</span>
+						</td>
+					</tr>
+
+
+					<tr>
+						<th>
+							<span>개별상품 리스트</span>
+							<span class="f_main">*</span>
+						</th>
+						<td colspan="5">
+							<a href="javascript:void(0)" class="partialItemBtn btn normal higher col_main f_w alignV">개별상품 추가</a>
+
+							<table class="set_table optionSet mt5">
+								<thead>
+								<tr>
+									<th>묶음상품명</th>
+									<th>상품 총합</th>
+									<th>관리</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>
+										1월 과일 묶음
+									</td>
+									<td>
+										5,000
+									</td>
+									<td>
+										<a href="javascript:void(0)" class="cateAdd_1 btn smaller higher col_grey">삭제</a>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+
+
+
+						</td>
+					</tr>
+
+
+
+
+
+
+
+
+
+
+					<tr>
+						<th>
+							<span>개별상품 총합</span>
+							<span class="f_main">*</span>
+						</th>
+						<td>
+							<input class="tbox smallest" value="" name="">
+							<span>원</span>
+						</td>
+						<th>
+							<span>묶음상품 판매가</span>
+							<span class="f_main">*</span>
+						</th>
+						<td>
+							<input class="tbox smallest" value="" name="">
+							<span>원</span>
+						</td>
+						<th>
+							<span>할인율</span>
+							<span class="f_main">*</span>
+						</th>
+						<td>
+							<input class="tbox smallest" value="" name="">
+							<span>원</span>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn_group">
+				<a href="javascript:void(0)" class="btn col_main">등록</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- :: 묶음상품 선택 팝업 -->
+<div class="popup groupItemPop">
+	<div class="popupCon">
+		<div class="searchBox">
+			<span>검색어</span>
+			<input class="tbox normal">
+			<a href="javascript:void(0);" class="btn small col_main f_w">검색</a>
+			<a href="javascript:void(0);" class="btn small col_darkGrey f_w">초기화</a>
+		</div>
+		
+
+		<div class="tableBox">
+			<table class="set_table optionSet">
+				<thead>
+				<tr>
+					<th>묶음상품명</th>
+					<th>일반상품 총합</th>
+					<th>판매가</th>
+					<th>할인율</th>
+					<th>선택</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>
+						1월 과일 묶음
+					</td>
+					<td>
+						5,000
+					</td>
+					<td>
+						2,500
+					</td>
+					<td>
+						50%
+					</td>
+					<td>
+						<a href="javascript:void(0)" class="cateAdd_1 btn smaller higher col_blue f_w">선택</a>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- :: 개별상품 선택 팝업 -->
+<div class="popup partialItemPop">
+	<div class="popupCon">
+		<div class="searchBox">
+			<span>검색어</span>
+			<input class="tbox normal">
+			<a href="javascript:void(0);" class="btn small col_main f_w">검색</a>
+			<a href="javascript:void(0);" class="btn small col_darkGrey f_w">초기화</a>
+		</div>
+		<div class="tableBox">
+			<table class="set_table optionSet">
+				<thead>
+				<tr>
+					<th>상품명</th>
+					<th>판매가</th>
+					<th>선택</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>
+						1월 과일 묶음
+					</td>
+					<td>
+						5,000
+					</td>
+					<td>
+						<a href="javascript:void(0)" class="cateAdd_1 btn smaller higher col_blue f_w">선택</a>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+
+<script src="/nonghyup/manage/common/js/exif-js.js"></script>
+<script src="/nonghyup/manage/common/js/imgSet.js"></script>
+<script src="/nonghyup/manage/goods/js/goods.js"></script>
+<script>
+// :: 선택 옵션 추가 스크립트
+$(document).on('click', '.cateAdd_2', function(){
+
+var str 		=	'';
+
+	// str			+=	'<div class="menu_list">';
+
+	str			+=	'<tr>';
+	str			+=	'	<td>';
+	str			+=	'		<label>';
+	str			+=	'			<input type="checkbox" name="goods" value="<?=$goodsCode?>">';
+	str			+=	'		</label>';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<input class="tbox indexInput" value="1">';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<input class="tbox full center" value="">';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<input class="tbox full center" value="">';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<input class="tbox full center" value="">';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<div>';
+	str			+=	'			<input class="tbox smallest" value="">';
+	str			+=	'		</div>';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<div class="optStatChkBox">';
+	str			+=	'			<label>';
+	str			+=	'				<input type="radio" name="goodsStatus" value="" checked="">';
+	str			+=	'				<span>사용</span>';
+	str			+=	'			</label>';
+	str			+=	'		</div>';
+	str			+=	'		<div class="optStatChkBox">';
+	str			+=	'			<label>';
+	str			+=	'				<input type="radio" name="goodsStatus" value="">';
+	str			+=	'				<span>미사용</span>';
+	str			+=	'			</label>';
+	str			+=	'		</div>';
+	str			+=	'		<div class="optStatChkBox">';
+	str			+=	'			<label>';
+	str			+=	'				<input type="radio" name="goodsStatus" value="">';
+	str			+=	'				<span>품절</span>';
+	str			+=	'			</label>';
+	str			+=	'		</div>';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<span>';
+	str			+=	'			<a href="javascript:void(0);" class="btn small col_darkGrey f_w">삭제</a>';
+	str			+=	'		</span>';
+	str			+=	'	</td>';
+	str			+=	'</tr>';
+
+$('.optionList_2 .list_table tbody').append(str);
+});
+
+
+// :: 섬네일 클릭시 테두리에 색상 추가 
+$(document).on('click', '.storeImgSmall .sizeFixImg canvas', function(){
+	$('.storeImgSmall .imgUploadBox').removeClass('selected');
+	$(this).parent('.imgUploadBox').addClass('selected');
+});
+
+
+// :: 테이블 내 <tr> 태그 위로 이동 스크립트
+$(document).on('click', '.moveUp', function(){
+
+	let	$targetTr	=	$(this).closest('tr');
+
+	$targetTr.prev().before($targetTr);
+});
+
+// :: 테이블 내 <tr> 태그 아래로 이동 스크립트
+$(document).on('click', '.moveDown', function(){
+
+let	$targetTr	=	$(this).closest('tr');
+
+$targetTr.next().after($targetTr);
+});
+
+
+//  :: 페이징 스크립트
+$(document).on('click', '.page_group a',function(){
+	let pageGroup	=	$(this).parent('li.pageNum').siblings('li');
+	$(pageGroup).removeClass('on');
+	$(this).parent('li.pageNum').addClass('on');
+});
+
+
+
+// :: <농협> 상단 탭 스크립트
+$(document).on('click', '.goodsTypeTab a',function(){
+	$('.goodsTypeTab a').removeClass('selected');
+	$(this).addClass('selected');
+});
+
+
+// :: <농협> 묶음상품 선택 버튼 스크립트
+$(document).on('click', '.groupItemBtn', function(){
+	$('.popup.groupItemPop').show();
+	$('.contents').addClass('overlay');
+});
+
+
+// :: <농협> 개별상품 추가 버튼 스크립트 
+$(document).on('click', '.partialItemBtn', function(){
+	$('.popup.partialItemPop').show();
+	$('.contents').addClass('overlay');
+});
+</script>
+</body>
+</html>
