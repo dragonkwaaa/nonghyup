@@ -1,0 +1,150 @@
+html, body {
+	overflow: auto;
+}
+
+.container {
+	max-width: 1920px;
+	min-width : 1480px;
+	/* max-height : 1080px; */
+	height : auto;
+	margin: 0 auto;
+	position: relative;
+	overflow-y : auto;
+	padding: 0;
+}
+
+header {
+	text-align: center;
+	width : 1180px;
+	margin : 0 auto;
+	position: relative;
+	height : 140px;
+	line-height : 140px;
+}
+
+header .logoCase {
+	width : 143px;
+	height : 34px;
+	padding : 53px 0;
+	display : inline-block;
+}
+
+header .searchBox {
+	width: 347px;
+	height: 61px;
+	border: solid 1px #b3b3b3;
+	background-color: #ffffff;
+}
+header .searchBox.absoluteR {
+	top : 50%;
+	transform : translateY(-50%);
+	-webkit-transform : translateY(-50%);
+}
+
+.contents {
+	/* padding: 60px 0 40px 0;  */
+	/* background-color : lime; */
+	position : relative;
+	width : 1180px;
+	margin : 0 auto;
+	font-size : 0;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgb(117, 168, 209);
+	text-align: center;
+	font-size: 0;
+	border-top: 1px solid #ccc;
+	z-index: 5;
+	height : 30px;
+	width : 1920px;
+}
+
+.logoCase img {
+	width : 100%;
+	height : 100%;
+	display : block;
+}
+
+.searchBox input {
+	display : block;
+	width : calc(100% - 89px);
+	padding : 0 68px 0 21px;
+	height : 100%;
+	font-size : 20px;
+}
+
+.searchIcon {
+	width : 68px;
+	height : 61px;
+	background : url("/nonghyup/common/img/iconSearch.png") no-repeat center / 28px 29px;
+}
+
+.pageTop {
+	display : block;
+	width : 100%;
+	height :61px;
+	border-bottom : 1px solid #d9d9d9;
+}
+
+.pageTop .separatedLeft {
+	width : calc(100% - 91px);
+	height : 100%;
+}
+.pageTop .separatedRight {
+	width : 91px;
+	height : 100%;
+}
+
+.hamburgerBtn {
+	background-color : #000;
+	color : #fff;
+	display : inline-block;
+	padding : 21px 50px 21px 49px;
+}
+
+.iconHamburger {
+	width : 19px;
+	height : 17px;
+	line-height : 61px;
+	background : url("/nonghyup/common/img/iconHamburger.png") no-repeat center / 19px 17px;
+}
+.hamburgerBtn span {
+	font-size : 20px;
+}
+ul.menuTab {
+	display : inline-block;
+	height : 100%;
+}
+
+ul.menuTab li {
+	width : 195px;
+	height : 100%;
+	display : inline-block;
+}
+ul.menuTab li a {
+	font-size : 20px;
+	display : block;
+	line-height : 60px;
+	text-align : center;
+}
+
+.iconMy {
+	width : 30px;
+	height : 30px;
+	padding : 15px 0;
+	display : inline-block;
+	background : url("/nonghyup/common/img/iconMy.png") no-repeat center / 30px 30px;
+}
+
+.iconCart {
+	width : 30px;
+	height : 30px;
+	padding : 15px 0;
+	display : inline-block;
+	background : url("/nonghyup/common/img/iconCart.png") no-repeat center / 30px 30px;
+}
