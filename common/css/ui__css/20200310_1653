@@ -1,0 +1,158 @@
+.relative {
+	position : relative;
+}
+.absoluteR {
+	position : absolute;
+	top : 0;
+	right : 0;
+}
+.absoluteL {
+	position : absolute;
+	top : 0;
+	left : 0;
+}
+input::placeholder {
+	color : #c0c0c0;
+}
+
+.separatedLeft {
+	display : inline-block;
+	width : 50%;
+	vertical-align : top;
+}
+.separatedRight {
+	display : inline-block;
+	width : 50%;
+	vertical-align : top;
+}
+
+.verticalM {
+	vertical-align : middle;
+}
+
+.ml15 {
+	margin-left : 15px;
+}
+
+.ml30 {
+	margin-left : 30px;
+}
+.mt8 {
+	margin-top : 8px;
+}
+
+.section {
+	width : 100%;
+	display : block;
+}
+
+.mainTitle {
+	display : block;
+	width: 100%;
+	padding : 49px 0 53px 0;
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	color: #000000;
+}
+
+
+
+
+
+
+
+label input[type=checkbox], 
+label input[type=radio] {
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	background : url("/nonghyup/common/img/checkBox_off.png") no-repeat center / cover;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input, input[type=text], 
+input[type=password], 
+.tbox {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    -webkit-border-radius: 0!important;
+    box-shadow: none !important;
+    /* -webkit-border-radius: 0 !important; */
+    /* -moz-border-radius: 0 !important; */
+    /* border-radius: 0 !important; */
+}
+
+label input[type=checkbox]:checked {
+	background : url("/nonghyup/common/img/checkBox_on.png") no-repeat center / cover;
+}
+
+input[type=checkbox] + span, 
+input[type=radio] + span {
+    padding-left: 8px;
+    font-size: 14px;
+    color: #010101;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.f_semiBold {
+	font-weight : 500;
+}
+
+.f20 {
+	font-size : 20px;
+}
+.f16 {
+	font-size : 16px;
+}
+
+.iconMy {
+	width : 30px;
+	height : 30px;
+	padding : 15px 0;
+	display : inline-block;
+	background : url("/nonghyup/common/img/iconMy.png") no-repeat center / 30px 30px;
+}
+
+.iconCart {
+	width : 30px;
+	height : 30px;
+	padding : 15px 0;
+	display : inline-block;
+	background : url("/nonghyup/common/img/iconCart.png") no-repeat center / 30px 30px;
+}
+
+.searchIcon {
+	width : 68px;
+	height : 61px;
+	background : url("/nonghyup/common/img/iconSearch.png") no-repeat center / 28px 29px;
+}
+
+.iconHamburger {
+	width : 19px;
+	height : 17px;
+	line-height : 61px;
+	background : url("/nonghyup/common/img/iconHamburger.png") no-repeat center / 19px 17px;
+}
+
+.deleteBtn {
+	width : 18px;
+	height : 18px;
+	display : block;
+	background : url("/nonghyup/common/img/iconClose.png") no-repeat center / cover;
+}
