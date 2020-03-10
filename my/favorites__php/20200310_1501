@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/head.php';?> 
+
+<body>
+<div class="container">
+
+	<!-- :: 헤더 파트 -->
+	<header>
+		<div class="logoCase">
+			<img src="/nonghyup/common/img/logoMain.png">
+		</div>
+		<div class="searchBox absoluteR">
+			<input placeholder="ex)유기농 식품" class="searchInput">
+			<a href="javascript:void(0);" class="absoluteR searchIcon"></a>
+		</div>
+	</header>
+
+	<!-- :: 주요 내용 파트 -->
+	<div class="contents">
+		
+		
+		<!-- :: 상단 햄버거 + 탭 파트 -->
+		<div class="pageTop">
+			<div class="separatedLeft">
+				<a href="javascript:void(0);" class="btn hamburgerBtn">
+					<i class="iconHamburger verticalM"></i>
+					<span class="ml15 verticalM">전체 카테고리</span>
+				</a>
+				<ul class="menuTab verticalM">
+					<li>
+						<a href="javascript:void(0);">묶음배송</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">베스트</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">이벤트</a>
+					</li>
+				</ul>
+			</div>
+			<div class="separatedRight">
+
+
+				<a href="javascript:void(0);" class="iconMy"></a>
+				<a href="javascript:void(0);" class="iconCart ml30"></a>
+			</div>
+
+
+
+
+
+		</div>
+
+
+
+
+
+
+	</div>
+</div>
+<script></script>
+</body>
+</html>
