@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/head.php';?> 
+
+<body>
+<div class="container">
+
+	<!-- :: 헤더 파트 -->
+	<header>
+		<div class="logoCase">
+			<img src="">
+			<div class="searchBox floatR relative">
+				<input placeholder="ex)유기농 식품" class="searchInput">
+				<a href="javascript:void(0);" class="absoluteR">
+					<i class="searchIcon"></i>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<!-- :: 주요 내용 파트 -->
+	<div class="contents">
+		sdfsd
+	</div>
+</div>
+<script></script>
+</body>
+</html>
