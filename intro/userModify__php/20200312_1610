@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/head.php';?> 
+
+<body>
+<div class="container">
+	<!-- :: 헤더 파트 -->
+	<header>
+		<div class="logoCase">
+			<img src="/nonghyup/common/img/logoMain.png">
+		</div>
+		<div class="searchBox absoluteR">
+			<input placeholder="ex)유기농 식품" class="searchInput">
+			<a href="javascript:void(0);" class="absoluteR searchIcon"></a>
+		</div>
+	</header>
+	<!-- :: 상단 햄버거 + 탭 파트 -->
+	<div class="pageTop">
+		<div class="separatedLeft">
+			<a href="javascript:void(0);" class="btn hamburgerBtn">
+				<i class="iconHamburger verticalM"></i>
+				<span class="ml15 verticalM">전체 카테고리</span>
+			</a>
+			<ul class="menuTab verticalM">
+				<li>
+					<a href="javascript:void(0);">묶음배송</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">베스트</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">이벤트</a>
+				</li>
+			</ul>
+		</div>
+		<div class="separatedRight">
+			<a href="javascript:void(0);" class="iconMy"></a>
+			<a href="javascript:void(0);" class="iconCart ml30"></a>
+		</div>
+	</div>
+	<!-- :: 컨텐츠  파트 -->
+	<div class="contents">
+		<!-- :: 따라다니는 졸졸이(예정) -->
+		<div class="rightFloat">
+			<div class="recentView">
+				<div class="menuTitle">최근 본 상품</div>
+				<div class="f_red">1</div>
+				<ul class="imgList">
+					<li>
+						<a href="javascript:void(0);">
+							<img src="/nonghyup/common/img/recentView_1.png">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img src="/nonghyup/common/img/recentView_1.png">
+						</a>
+					</li>
+				</ul>
+				<div class="pageCount">
+					<span class="f_red">1</span>
+					<span>/</span>
+					<span>1</span>
+					<a href="javascript:void(0);" class="arrowPrev"></a>
+					<a href="javascript:void(0);" class="arrowNext"></a>
+				</div>
+			</div>
+			<a href="javascript:void(0);" class="bg_yellow rimlessBtn mt9 f14 f_semiBold tAlignC">1:1 문의하기</a>
+			<a href="javascript:void(0);" class="arrowUp"></a>
+		</div>
+		<!-- :: 주요 내용 섹션 -->
+		<div class="section userRegSect">
+			<div class="mainTitle">회원가입</div>
+
+
+
+
+			<!-- :: 회원정보 입력 파트 -->
+			<div class="listGroup">
+				<ul class="regInfoList">
+					<li class="infoGroup">
+						<!-- <div class="segmentTop f_bold f20">
+							주문자 정보
+						</div> -->
+						<div class="mainCon">
+							<table class="infoRegTable">
+								<tbody>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="이름을 입력해주세요." value="우장춘">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" readonly placeholder="아이디를 입력해주세요." value="watermeloner">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="비밀번호를 입력해주세요." value="">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="비밀번호를 재입력해주세요.">
+									</td>
+								</tr>
+								<tr>
+									<td class="fontReset">
+										<input class="tbox short f16" placeholder="우편번호" value="000">
+										<a href="javascript:void(0);" class="bg_yellow f_white rimlessBtn tAlignC vAlignT short">검색</a>
+										<input class="tbox normal f16" placeholder="기본 주소" value="서울시 마포구 마포대로 36">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="나머지 주소를 입력해주세요." value="상가 건물 2층">
+									</td>
+								</tr>
+								<tr>
+									<td class="fontReset">
+										<input class="tbox long f16" placeholder="휴대폰번호를 입력해주세요." value="01009876543">
+										<a href="javascript:void(0);" class="bg_yellow f_white rimlessBtn tAlignC vAlignT normal">재인증하기</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="fontReset">
+										<input class="tbox long f16" placeholder="인증번호를 입력해주세요.">
+										<a href="javascript:void(0);" class="f_yellow plainBtn tAlignC vAlignT normal">재전송</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>
+											<input type="checkbox" name="checkAll">
+											<span class="f_semiBold">수신동의</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="이메일을 입력해주세요." value="dragonkwaaa@hotmail.com">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>
+											<input type="checkbox" name="checkAll">
+											<span class="f_semiBold">수신동의</span>
+										</label>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li>
+						<!-- :: 버튼 파트 -->
+						<div class="btnGroup">
+							<a href="javascript:void(0);" class="rimlessBtn cancelBtn">취소</a>
+							<a href="javascript:void(0);" class="rimlessBtn regBtn">저장</a>
+						</div>
+					
+					</li>
+				</ul>
+			</div>
+			
+
+
+			
+		</div>
+	</div>
+	<!-- :: 푸터 파트 -->
+	<footer>
+		<div class="section footerSection">
+			<!-- :: 푸터 상단 좌측 파트 -->
+			<div class="separatedLeft">
+				<div class="CSInfo">
+					<div class="f_semiBold f30">
+						고객센터
+					</div>
+					<div class="f_semiBold f_yellow f30 mt30">
+						070-1234-5678
+					</div>
+					<div class="f16 mt16">
+						09:00~18:00 주말/공휴일 휴무
+					</div>
+				</div>
+				<!-- :: 문의하기/바로가기 버튼 파트 -->
+				<div class="btnGroup faqBtnGroup">
+					<a href="javascript:void(0);" class="plainBtn long relative">
+						<span>1:1문의하기</span>
+						<i class="linkIcon absoluteR"></i>
+					</a>
+					<a href="javascript:void(0);" class="plainBtn long relative mt9">
+						<span>FAQ 바로가기</span>
+						<i class="linkIcon absoluteR"></i>
+					</a>
+				</div>		
+			</div>
+			<!-- :: 푸터 상단 우측 파트  -->
+			<div class="separatedRight">
+				<a href="javascript:void(0);" class="noticeMore">
+					<span class="f30 f_semiBold">공지사항</span>
+					<i class="linkIcon ml30"></i>
+				</a>
+				<ul class="noticeList mt30">
+					<li>
+						<a href="javascript:void(0);">[공지사항] 설 연휴 배송안내</a>
+						<span class="absoluteR f14">2020.01.01</span>
+					</li>
+					<li>
+						<a href="javascript:void(0);">[공지사항] 설 연휴 배송안내</a>
+						<span class="absoluteR f14">2020.01.01</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- :: 푸터 최하단 파트 -->
+		<div class="section bg_black f_white mt80">
+			<div class="copywritePannel relative">
+				<div class="btnGroup">
+					<a href="javascript:void(0);">이용약관</a>
+					<a href="javascript:void(0);" class="f_semiBold ml30">개인정보처리방침</a>
+				</div>
+				<div class="businessInfo mt40">
+					<div>
+						<span>상호명 : 농협몰</span>
+						<span>대표 : 강동원</span>
+						<span>서울시 마포구 마포대로 12</span>
+					</div>
+					<div>
+						<span>전화번호 : 070-1234-5678</span>
+						<span>팩스번호 : 02-123-4567</span>
+					</div>
+					<div>메일 : abcd123@naver.com</div>
+					<div>
+						<span>사업자등록번호 : 111-86-00007</span>
+						<span>통신판매업신고번호 : 제2020-00107호</span>
+					</div>
+					<div>Copyright © NHmall All right reserved.</div>
+				</div>
+				<img src="/nonghyup/common/img/logoFooter.png" class="absoluteR footerLogo">
+			</div>
+		</div>
+	</footer>
+</div>
+<script>
+
+// :: 셀렉트박스 스크립트(공용)
+$(document).on('click', '.sbox a', function(){
+	$(this).siblings('ul').slideToggle();
+})
+
+
+</script>
+</body>
+</html>
