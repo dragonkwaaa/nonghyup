@@ -1,0 +1,90 @@
+@media(max-width:800px) {
+
+	.container {
+		max-width: 800px;
+		min-width : auto;
+		width : 100%;
+		height : auto;
+		min-height: 100%;
+		margin: 0 auto;
+		position: relative;
+		padding: 0;
+	}
+
+
+
+
+
+
+
+
+					header {
+						display : none;
+					}
+					.pageTop {
+						display : none;
+					}
+					.rightFloat {
+						display : none;
+					}
+					footer {
+						display : none;
+					}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.contents {
+		position : relative;
+		width  : 100%;
+		margin : 0 auto 100px;
+		font-size : 0;
+		/* max-width : 1920px; */
+		/* background-color: #fff;
+		padding-bottom : 60px; */
+	}
+	.mainImgSlider {
+		max-width : 800px;
+		margin : 0;
+	}
+	.bannerImgGroup a {
+		display : block;
+	}
+	.bannerImgGroup a:nth-child(2) {
+		margin-left : 0;
+		margin-top : 20px;
+	}
+	.bannerImgGroup img.bannerImg {
+		width : calc(100% - 60px);
+		margin : 0 30px;
+	}
+
+	.bannerImgGroup {
+		margin-top : 20px;
+	}
+
+
+
+
+
+
+
+
+	/* .carboxList {
+		display : none;
+	}
+
+	.bannerImgGroup {
+		display : none;
+	} */
+}
