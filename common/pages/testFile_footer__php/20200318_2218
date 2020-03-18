@@ -1,0 +1,73 @@
+<footer>
+	<div class="section footerSection">
+		<!-- :: 푸터 상단 좌측 파트 -->
+		<div class="separatedLeft">
+			<div class="CSInfo">
+				<div class="f_semiBold f30">
+					고객센터
+				</div>
+				<div class="f_semiBold f_yellow f30 mt30">
+					070-1234-5678
+				</div>
+				<div class="f16 mt16">
+					09:00~18:00 주말/공휴일 휴무
+				</div>
+			</div>
+			<!-- :: 문의하기/바로가기 버튼 파트 -->
+			<div class="btnGroup faqBtnGroup">
+				<a href="/nonghyup/my/inquiryWrite" class="plainBtn long relative">
+					<span>1:1문의하기</span>
+					<i class="linkIcon absoluteR"></i>
+				</a>
+				<a href="../board/faq" class="plainBtn long relative mt9">
+					<span>FAQ 바로가기</span>
+					<i class="linkIcon absoluteR"></i>
+				</a>
+			</div>
+		</div>
+		<!-- :: 푸터 상단 우측 파트  -->
+		<div class="separatedRight">
+			<a href="/nonghyup/my/notice" class="noticeMore">
+				<span class="f30 f_semiBold">공지사항</span>
+				<i class="linkIcon ml30"></i>
+			</a>
+			<ul class="noticeList mt30">
+				<li>
+					<a href="/nonghyup/my/notice">[공지사항] 설 연휴 배송안내</a>
+					<span class="absoluteR f14">2020.01.01</span>
+				</li>
+				<li>
+					<a href="/nonghyup/my/notice">[공지사항] 설 연휴 배송안내</a>
+					<span class="absoluteR f14">2020.01.01</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- :: 푸터 최하단 파트 -->
+	<div class="section bg_black f_white mt80">
+		<div class="copywritePannel relative">
+			<div class="btnGroup">
+				<a href="javascript:void(0);">이용약관</a>
+				<a href="javascript:void(0);" class="f_semiBold ml30">개인정보처리방침</a>
+			</div>
+			<div class="businessInfo mt40">
+				<div>
+					<span>상호명 : 농협몰</span>
+					<span>대표 : 강동원</span>
+					<span>서울시 마포구 마포대로 12</span>
+				</div>
+				<div>
+					<span>전화번호 : 070-1234-5678</span>
+					<span>팩스번호 : 02-123-4567</span>
+				</div>
+				<div>메일 : abcd123@naver.com</div>
+				<div>
+					<span>사업자등록번호 : 111-86-00007</span>
+					<span>통신판매업신고번호 : 제2020-00107호</span>
+				</div>
+				<div>Copyright © NHmall All right reserved.</div>
+			</div>
+			<img src="/nonghyup/common/img/logoFooter.png" class="absoluteR footerLogo">
+		</div>
+	</div>
+</footer>
