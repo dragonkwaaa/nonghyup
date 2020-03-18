@@ -1,0 +1,119 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manager/common/pages/head.php';
+	$mCode					=	'01';
+	$lCode					=	'0303';
+?>
+<body>
+<div class="container">
+	<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manager/common/pages/header.php'; ?>
+	<div class="wrapper">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manager/goods/pages/goodsLeft.php'; ?>
+		<div class="contents">
+			<div class="list_field">
+				<div class="field_title">
+					<span class="title_mark">■ 보조 배너(왼쪽) 리스트</span>
+				</div>
+				<div class="list_menu">
+					<span class="left_menu">
+						<a href="javascript:void(0)" class="btn col_grey">전체선택</a>
+						<a href="javascript:void(0)" class="btn col_grey">전체해제</a>
+						<a href="javascript:void(0)" class="btn col_darkGrey f_w">선택삭제</a>
+					</span>
+					<span class="right_menu">
+						<a href="/nonghyup/manager/set/subBannerLReg" class="btn col_main f_w">배너등록</a>
+						<!-- <span class="sbox small">
+							<select>
+								<option value="1">번호순 ▲</option>
+								<option value="2">번호순 ▼</option>
+								<option value="3">이름순 ▲</option>
+								<option value="4">이름순 ▼</option>
+							</select>
+						</span> -->
+					</span>
+				</div>
+				<table class="list_table">
+					<colgroup>
+						<col width="50">
+						<col width="50">
+						<col width="180">
+						<col width="180">
+						<col width="100">
+						<col width="80">
+					</colgroup>
+					<thead>
+					<tr>
+						<th>
+							<label>
+								<input type="checkbox">
+							</label>
+						</th>
+						<th>순서</th>
+						<th>이름</th>
+						<th>URL</th>
+						<th>상태</th>
+						<th>관리</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>
+							<label>
+								<input type="checkbox">
+							</label>
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							새벽에 수확한 딸기 500g
+						</td>
+						<td>
+							http://publ.heeyam.com/nonghyup/goods/
+						</td>
+						<td>
+							<label>
+								<input type="radio" name="isUse0">
+								<span>사용</span>
+							</label>
+						</td>
+						<td>
+							<a href="/nonghyup/manager/set/subBannerLReg" class="btn small col_main f_w delTr">수정</a>
+							<a href="javascript:void(0);" class="btn small col_darkGrey f_w delTr mt5">삭제</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>
+								<input type="checkbox">
+							</label>
+						</td>
+						<td>
+							2
+						</td>
+						<td>
+							새벽에 수확한 딸기 250g (묶음상품)
+						</td>
+						<td>
+							http://publ.heeyam.com/nonghyup/goods/
+						</td>
+						<td>
+							<label>
+								<input type="radio" name="isUse0">
+								<span>사용</span>
+							</label>
+						</td>
+						<td>
+							<a href="/nonghyup/manager/set/subBannerLReg" class="btn small col_main f_w delTr">수정</a>
+							<a href="javascript:void(0);" class="btn small col_darkGrey f_w delTr mt5">삭제</a>
+						</td>
+					</tr>
+					</tbody>	
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<!-- <script src="/nonghyup/manager/common/js/common.js"></script> -->
+<script>
+</script>
+</html>
