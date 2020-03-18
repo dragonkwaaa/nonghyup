@@ -1,0 +1,88 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manager/common/pages/head.php';
+	$mCode					=	'01';
+	$lCode					=	'0304';
+?>
+<body>
+
+<div class="container">
+	<!-- gnb -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manager/common/pages/header.php'; ?>
+	<div class="wrapper">
+		<!-- lnb -->
+		<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manager/goods/pages/goodsLeft.php'; ?>
+		<div class="contents">
+
+			<!-- :: 기본 정보 파트 -->
+			<div class="set_field">
+				<div class="field_title">
+					<span class="title_mark">■ 보조 배너(왼쪽) 등록</span>
+				</div>
+				<table class="set_table">
+					<colgroup>
+						<col width="120">
+						<col width="*">
+					</colgroup>
+					<tbody>
+					<tr>
+						<th>
+							<span>이름</span>
+						</th>
+						<td>
+							<input class="tbox long" value="" name="">
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span>URL</span>
+						</th>
+						<td>
+							<input class="tbox long" value="" name="">
+						</td>
+					</tr>
+					<tr>
+						<th>상품이미지</th>
+						<td>
+							<div class="f_main">* 권장 이미지 사이즈는 580*250 픽셀입니다.</div>
+							<div class="storeImg">
+								<div class="sizeFixImg">
+									<div class="imgUploadBox subBanner">
+										<input type="file" class="hide" accept="image/*" name="img_<?= $i?>" onchange="img_sel(this, event)">
+										<a href="javascript:void(0)" class="upload_btn" onclick="img_upload(this)"></a>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span>상태</span>
+						</th>
+						<td>
+							<label>
+								<input type="radio" name="goodsState" value="1" checked="">
+								<span>사용</span>
+							</label>
+							<label class="ml10">
+								<input type="radio" name="goodsState" value="0">
+								<span>미사용</span>
+							</label>
+							<span class="f_main ml10">* 미사용 체크시 배너 이미지가 화면에 표시되지 않습니다.</span>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn_group">
+				<a href="javascript:void(0)" class="btn col_main">등록</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/nonghyup/manager/common/js/exif-js.js"></script>
+<script src="/nonghyup/manager/common/js/imgSet.js"></script>
+<!-- <script src="/nonghyup/manager/goods/js/goods.js"></script> -->
+<script>
+
+</script>
+</body>
+</html>
