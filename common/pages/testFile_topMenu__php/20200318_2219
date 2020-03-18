@@ -1,0 +1,88 @@
+<div class="pageTop">
+	<div class="separatedLeft relative">
+		<a href="../goods/list" class="btn hamburgerBtn">
+			<i class="iconHamburger verticalM"></i>
+			<span class="ml15 verticalM">전체 카테고리</span>
+		</a>
+		<!-- :: 전체 카테고리 마우스 오버 하면 나오는 내용 파트 -->
+		<ul class="hamburgerList absoluteL">
+			<li>
+				<a href="../goods/list">기획전</a>
+			</li>
+			<li>
+				<a href="../goods/list">과일</a>
+			</li>
+			<li>
+				<a href="../goods/list">채소</a>
+			</li>
+			<li>
+				<a href="../goods/list">쌀/잡곡</a>
+				<ul class="hamburgerSubList">
+					<li>
+						<a href="../goods/list">유기농 현미</a>
+					</li>
+					<li>
+						<a href="../goods/list">건강 오곡</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="../goods/list">정육/계란류</a>
+			</li>
+			<li>
+				<a href="../goods/list">수산물/해산물</a>
+			</li>
+			<li>
+				<a href="../goods/list">견과류</a>
+			</li>
+			<li>
+				<a href="../goods/list">음료/주류</a>
+			</li>
+			<li>
+				<a href="../goods/list">유제품</a>
+			</li>
+			<li>
+				<a href="../goods/list">친환경/유기농</a>
+			</li>
+		</ul>
+		<ul class="menuTab verticalM">
+			<li>
+				<a href="/nonghyup/goods/regularList">정기배송</a>
+			</li>
+			<li>
+				<a href="../goods/bundleList">묶음배송</a>
+			</li>
+			<li>
+				<a href="../goods/list">이벤트</a>
+			</li>
+		</ul>
+	</div>
+	<div class="separatedRight">
+		<a href="/nonghyup/my" class="iconMy"></a>
+		<a href="/nonghyup/cart" class="iconCart ml30"></a>
+	</div>
+</div>
+
+
+
+<script>
+// ::전체 카테고리 호버 시 리스트 표시되는 스크립트
+$('.pageTop .hamburgerBtn').hover(function(){
+	$(this).siblings('ul.hamburgerList').show();
+}, function(){
+	$(this).siblings('ul.hamburgerList').hide();
+});
+// :: 리스트에 마우스 올리고 있는 동안 계속 표시되게 하는 스크립트
+$('ul.hamburgerList').hover(function(){
+	$(this).show();
+}, function(){
+	$(this).hide();
+});
+
+// :: 리스트 특정 항목에 마우스 호버 시 하위 리스트 표시되게 하는 스크립트
+$('ul.hamburgerList > li').hover(function(){
+	$(this).children('ul.hamburgerSubList').show();
+}, function(){
+	$(this).children('ul.hamburgerSubList').hide();
+});
+</script>
