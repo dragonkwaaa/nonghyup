@@ -1,0 +1,11 @@
+<header>
+	<div class="logoCase">
+		<a href="/nonghyup/main">
+		<img src="/nonghyup/common/img/logoMain.png">
+		</a>
+	</div>
+	<div class="searchBox absoluteR">
+		<input placeholder="ex)유기농 식품" class="searchInput">
+		<a href="../goods/list" class="absoluteR searchIcon"></a>
+	</div>
+</header>
