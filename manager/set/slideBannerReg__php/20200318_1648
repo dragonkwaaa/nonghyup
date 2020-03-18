@@ -1,0 +1,179 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manager/common/pages/head.php';
+	// $mCode					=	'02';
+	// $lCode					=	'0202';
+?>
+<body>
+
+<div class="container">
+	<!-- gnb -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manager/common/pages/header.php'; ?>
+	<div class="wrapper">
+		<!-- lnb -->
+		<?php include $_SERVER['DOCUMENT_ROOT'] . '/nonghyup/manager/goods/pages/goodsLeft.php'; ?>
+		<div class="contents">
+
+
+			<!-- :: 기본 정보 파트 -->
+			<div class="set_field">
+				<div class="field_title">
+					<span class="title_mark">■ 배너등록</span>
+					<span class="f_main tip">(*)는 필수 입력 사항입니다.</span>
+				</div>
+				<table class="set_table">
+					<colgroup>
+						<col width="120">
+						<col width="*">
+					</colgroup>
+					<tbody>
+					<tr>
+						<th>
+							<span>URL</span>
+							<span class="f_main">*</span>
+						</th>
+						<td>
+							<input class="tbox long" value="" name="">
+						</td>
+					</tr>
+					<tr>
+						<th>상품이미지</th>
+						<td>
+							<div class="f_main">* 권장 이미지 사이즈는 1180*370 픽셀입니다.</div>
+							<div class="f_main">* 섬네일을 클릭하면 큰 이미지가 표시됩니다.</div>
+							<div class="storeImgSmall">
+								<?php for($i = 1 ; $i <= 5 ; $i ++){ ?>
+								<div class="sizeFixImg">
+									<div class="imgUploadBox">
+										<input type="file" class="hide" accept="image/*" name="img_<?= $i?>" onchange="img_sel(this, event)">
+										<a href="javascript:void(0)" class="upload_btn" onclick="img_upload(this)"></a>
+									</div>
+								</div>
+								<?php } ?>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span>상태</span>
+							<span class="f_main">*</span>
+						</th>
+						<td>
+							<label>
+								<input type="radio" name="goodsState" value="1" checked="">
+								<span>사용</span>
+							</label>
+							<label class="ml10">
+								<input type="radio" name="goodsState" value="0">
+								<span>미사용</span>
+							</label>
+							<label class="ml10">
+								<input type="radio" name="goodsState" value="2">
+								<span>품절</span>
+							</label>
+							<span class="f_main ml10">* 미사용 체크시 상품이 소비자의 화면에 표시되지 않습니다.</span>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn_group">
+				<a href="javascript:void(0)" class="btn col_main">등록</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/nonghyup/manager/common/js/exif-js.js"></script>
+<script src="/nonghyup/manager/common/js/imgSet.js"></script>
+<!-- <script src="/nonghyup/manager/goods/js/goods.js"></script> -->
+<script>
+// :: <농협> 옵션 추가 스크립트
+$(document).on('click', '.cateAdd_2', function(){
+
+var str 		=	'';
+
+	// str			+=	'<div class="menu_list">';
+
+	str			+=	'<tr>';
+	str			+=	'	<td>';
+	str			+=	'		<label>';
+	str			+=	'			<input type="checkbox" name="goods" value="<?=$goodsCode?>">';
+	str			+=	'		</label>';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<input class="tbox indexInput" value="1">';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<input class="tbox full center" value="">';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<input class="tbox full center" value="">';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<input class="tbox full center" value="">';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<div class="optStatChkBox">';
+	str			+=	'			<label>';
+	str			+=	'				<input type="radio" name="goodsStatus" value="" checked="">';
+	str			+=	'				<span>사용</span>';
+	str			+=	'			</label>';
+	str			+=	'		</div>';
+	str			+=	'		<div class="optStatChkBox">';
+	str			+=	'			<label>';
+	str			+=	'				<input type="radio" name="goodsStatus" value="">';
+	str			+=	'				<span>미사용</span>';
+	str			+=	'			</label>';
+	str			+=	'		</div>';
+	str			+=	'		<div class="optStatChkBox">';
+	str			+=	'			<label>';
+	str			+=	'				<input type="radio" name="goodsStatus" value="">';
+	str			+=	'				<span>품절</span>';
+	str			+=	'			</label>';
+	str			+=	'		</div>';
+	str			+=	'	</td>';
+	str			+=	'	<td>';
+	str			+=	'		<span>';
+	str			+=	'			<a href="javascript:void(0);" class="btn small col_darkGrey f_w">삭제</a>';
+	str			+=	'		</span>';
+	str			+=	'	</td>';
+	str			+=	'</tr>';
+
+$('.optionList_2 .list_table tbody').append(str);
+});
+
+
+//  :: 페이징 스크립트
+$(document).on('click', '.page_group a',function(){
+	let pageGroup	=	$(this).parent('li.pageNum').siblings('li');
+	$(pageGroup).removeClass('on');
+	$(this).parent('li.pageNum').addClass('on');
+});
+
+
+// :: <농협> 상단 탭 스크립트
+$(document).on('click', '.goodsTypeTab a',function(){
+	$('.goodsTypeTab a').removeClass('selected');
+	$(this).addClass('selected');
+});
+
+
+
+
+// :: ksg_20200311_1646 open : <농협> 카테고리 선택 스크립트 
+$(document).on('click', '.selectCateBtn', function(){
+
+	var str 		=	'';
+
+	str			+=	'<li>';
+	str			+=	'	<span class="f_main">산지직송</span>';
+	str			+=	'	<a href="javascript:void(0)" class="closeBtn">×</a>';
+	str			+=	'</li>';
+
+	$('.selectedCateGroup').append(str);
+	$('li.emptyListText').hide();
+});
+// :: ksg_20200311_1646 close : <농협> 카테고리 선택 스크립트 
+
+
+</script>
+</body>
+</html>
