@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/head.php';?> 
+
+<body>
+<div class="container">
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/header.php';?> 
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/topMenu.php';?> 
+
+	<!-- :: 컨텐츠  파트 -->
+	<div class="contents">
+
+		<!-- :: 플로팅 내용 파트 -->
+		<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/rightFloat.php';?> 
+
+		<!-- :: 주요 내용 섹션 -->
+		<div class="section userRegSect">
+			<div class="mainTitle">정기배송 관리</div>
+			<div class="listGroup">
+				<ul class="regInfoList">
+					<li class="infoGroup">
+						<div class="listTop mt50">
+							<div class="f18 f_bold">정기배송 이용기간</div>
+							<ul class="script_regularDuration dateTerm mt14">
+								<li class="on">
+									<a href="javascript:void(0);" class="plainBtn">3개월</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="plainBtn">6개월</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="plainBtn">9개월</a>
+								</li>
+							</ul>
+						</div>
+						<table class="infoRegTable morphRegular">
+							<tbody>
+							<tr>
+								<td class="fontReset">
+									<input class="tbox short f16" placeholder="우편번호">
+									<a href="javascript:void(0);" class="bg_yellow f_white rimlessBtn tAlignC vAlignT short">검색</a>
+									<input class="tbox normal f16" placeholder="기본 주소">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input class="tbox full" placeholder="나머지 주소를 입력해주세요.">
+								</td>
+							</tr>
+							<tr>
+								<td class="fontReset">
+									<span class="sbox">
+										<a href="javascript:void(0);" class="f16">은행 선택</a>
+										<ul>
+											<li>국민은행</li>
+											<li>우리은행</li>
+										</ul>
+									</span>
+									<input class="tbox normal f16 ml8" placeholder="계좌번호 입력">
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</li>
+					<li class="infoGroup">
+						<ul class="goodsList morphRegular">
+							<li>
+								<div class="segmentTop">
+									<label>
+										<input type="checkbox" name="">
+									</label>
+								</div>
+								<div class="mainCon">
+									<img src="/nonghyup/common/img/goodsTag_1.png" class="goodsImg separatedLeft"></img>
+									<div class="goodsInfo separatedRight relative">
+										<div class="absoluteT infoText">
+											<div class="f16 f_semiBold">새벽에 수확한 딸기 500g</div>
+											<div class="f12">
+												<div>딸기 500g : 2~5팩 X 1개</div>
+												<div>-추가 50g X 1개</div>
+											</div>
+										</div>
+										<div class="absoluteMR f_bold f20">17,900원</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="segmentTop">
+									<label>
+										<input type="checkbox" name="">
+									</label>
+								</div>
+								<div class="mainCon">
+									<img src="/nonghyup/common/img/goodsTag_1.png" class="goodsImg separatedLeft"></img>
+									<div class="goodsInfo separatedRight relative">
+										<div class="absoluteT infoText">
+											<div class="f16 f_semiBold">새벽에 수확한 딸기 500g</div>
+											<div class="f12">
+												<div>딸기 500g : 2~5팩 X 1개</div>
+												<div>-추가 50g X 1개</div>
+											</div>
+										</div>
+										<div class="absoluteMR f_bold f20">17,900원</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!-- :: 선택 관련 버튼 파트 -->
+						<div class="btnGroup morphRegular">
+							<a href="javascript:void(0);" class="plainBtn">전체선택</a>
+							<a href="javascript:void(0);" class="plainBtn ml7">선택삭제</a>
+						</div>
+						<!-- :: 페이징 파트 -->
+						<ul class="pagingGroup">
+							<li>
+								<a href="javascript:void(0);" class="pagingPrev"></a>
+							</li>
+							<li class="on">
+								<a href="javascript:void(0);" class="">1</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" class="on">2</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" class="">3</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" class="">4</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" class="">5</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" class="pagingNext"></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<!-- :: 버튼 파트 -->
+						<div class="btnGroup morphRegular tAlignC">
+							<a href="javascript:void(0);" class="rimlessBtn modifyBtn mt50">수정하기</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- :: 푸터 파트 -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/footer.php';?> 
+</div>
+<script>
+// :: 정기배송 기간 선택 스크립트 
+$(document).on('click', '.script_regularDuration a', function(){
+	
+	$('.dateTerm li a').parent('li').removeClass('activated');
+	$(this).parent('li').addClass('activated');
+});
+</script>
+</body>
+</html>
