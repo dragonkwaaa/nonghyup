@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_head.php';?> 
+
+<body>
+<div class="container">
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_header.php';?> 
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_topMenu.php';?> 
+
+	<!-- :: 컨텐츠  파트 -->
+	<div class="contents">
+
+		<!-- :: 플로팅 내용 파트 -->
+		<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_rightFloat.php';?> 
+
+		<!-- :: 주요 내용 섹션 -->
+		<div class="section mainSect">
+
+
+
+
+
+			<!-- :: ksg : 슬라이더 이미지 파트 (웹) -->
+			<div class="mainImgSlider customSlider webViewGroup">
+				<div class="sliderImgSingle">
+					<a href="javascript:void(0);">
+						<img src="/nonghyup/common/img/mainLongBanner.png" class="slideImg">
+					</a>
+				</div>
+				<div class="sliderImgSingle">
+					<a href="javascript:void(0);">
+						<img src="/nonghyup/common/img/mainLongBanner.png" class="slideImg">
+					</a>
+				</div>
+				<div class="sliderImgSingle">
+					<a href="javascript:void(0);">
+						<img src="/nonghyup/common/img/mainLongBanner.png" class="slideImg">
+					</a>
+				</div>
+			</div>
+
+
+
+
+
+
+			<!-- :: ksg : 모바일 슬라이더 이미지 파트 (모바일) -->
+			<div class="mainImgSlider customSlider mobileViewGroup relative">
+				<div class="sliderImgSingle">
+					<a href="javascript:void(0);">
+						<img src="/nonghyup/common/img/mainMobileSlider.png" class="slideImg">
+					</a>
+				</div>
+				<div class="sliderImgSingle">
+					<a href="javascript:void(0);">
+						<img src="/nonghyup/common/img/mainMobileSlider.png" class="slideImg">
+					</a>
+				</div>
+				<div class="sliderImgSingle">
+					<a href="javascript:void(0);">
+						<img src="/nonghyup/common/img/mainMobileSlider.png" class="slideImg">
+					</a>
+				</div>
+			</div>
+
+
+
+
+
+
+
+			<!-- :: 고정 2배열 이미지 파트 -->
+			<div class="bannerImgGroup">
+				<a href="javascript:void(0);">
+					<img src="/nonghyup/common/img/mainBanner_1.png" class="bannerImg">
+				</a>
+				<a href="javascript:void(0);">
+					<img src="/nonghyup/common/img/mainBanner_2.png" class="bannerImg">
+				</a>
+			</div>
+			<!-- :: 묶음배송 리스트 파트 -->
+			<div class="carboxList">
+				<a href="/nonghyup/goods/regularList" class="listLink">
+					<span class="listTitle">정기배송</span>
+					<i class="linkIcon absoluteMR"></i>
+				</a>
+				<ul>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_1.png" class="listImg absoluteL">
+						</div>
+						
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_1.png" class="listImg absoluteL">
+						</div>
+						
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_1.png" class="listImg absoluteL">
+						</div>
+						
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_1.png" class="listImg absoluteL">
+						</div>
+						
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_2.png" class="listImg absoluteL">
+						</div>
+						
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_2.png" class="listImg absoluteL">
+						</div>
+						
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_2.png" class="listImg absoluteL">
+						</div>
+						
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_2.png" class="listImg absoluteL">
+						</div>
+						
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+				</ul>
+			</div>
+			<!-- :: 베스트 리스트 파트 -->
+			<div class="carboxList">
+				<a href="/nonghyup/goods/bundleList" class="listLink">
+					<span class="listTitle">묶음배송</span>
+					<i class="linkIcon absoluteMR"></i>
+				</a>
+				<ul>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_1.png" class="listImg absoluteL">
+						</div>
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_1.png" class="listImg absoluteL">
+						</div>
+						
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_1.png" class="listImg absoluteL">
+						</div>
+						
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_1.png" class="listImg absoluteL">
+						</div>
+						
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_2.png" class="listImg absoluteL">
+						</div>
+						
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_2.png" class="listImg absoluteL">
+						</div>
+						
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_2.png" class="listImg absoluteL">
+						</div>
+						
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+					<li>
+						<div class="ratioImgBox">
+							<img src="/nonghyup/common/img/bundleImg_2.png" class="listImg absoluteL">
+						</div>
+						<div class="goodsTitle">제철 과일 묶음배송</div>
+						<div class="goodsPriceInfo relative">
+							<span class="calculatedPrice">20,000원</span>
+							<span class="originalPrice">24,000원</span>
+							<span class="discountAmount f_red absoluteR">-17%</span>
+						</div>
+						<a href="/nonghyup/goods" class="cardboxLinkFilter"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!-- :: 푸터 파트 -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_footer.php';?> 
+
+</div>
+<!-- :: 비밀번호 재설정 팝업 -->
+<div class="popup changeOptionPop">
+	<a href="javascript:void(0);" class="closePopBtn absoluteR"></a>
+	<div class="popupTitleBox changeoptionGroup">
+		<div class="mainTitle tAlignL">새벽에 수확한 딸기</div>
+	</div>
+	<ul class="regInfoList changeoptionGroup">
+		<li class="infoGroup">
+			<div class="mainCon">
+				<table class="infoRegTable changeoptionGroup">
+					<colgroup>
+						<col width="156">
+						<col width="485">
+					</colgroup>
+					<tbody>
+					<tr>
+						<th>옵션선택</th>
+						<td>
+							<span class="sbox">
+								<a href="javascript:void(0);">은행 선택</a>
+								<ul>
+									<li>국민은행</li>
+									<li>우리은행</li>
+								</ul>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th>수량</th>
+						<td>
+							<div class="quantityBox">
+								<a href="javascript:void(0);" class="decreaseIcon">-</a>
+								<input value="1" class="quantity">
+								<a href="javascript:void(0);" class="increaseIcon">+</a>
+							</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<div class="tAlignR mt40">
+					<span class="f14 vAlignM">총 합계금액</span>
+					<span class="f_red f24 f_bold vAlignM ml14">17,900 원</span>
+				</div>
+			</div>
+		</li>
+		<li>
+		<div class="btnGroup">
+			<a href="javascript:void(0);" class="plainBtn cancelBtn f24">취소</a>
+			<a href="javascript:void(0);" class="changePW rimlessBtn regBtn f24">변경</a>
+		</div>
+		</li>
+	</ul>
+</div>
+
+<script>
+
+// :: 비밀번호 변경 팝업 오픈 스크립트
+$(document).on('click', '.changeOptionBtn', function(){
+	$('.popup.changeOptionPop').show();
+	$('.container').addClass('overlay');
+});
+
+// :: 팝업 닫기 스크립트(공용)
+$(document).on('click', '.closePopBtn', function(){
+	$('.popup').hide();
+	$('.container').removeClass('overlay');
+});
+
+// :: 셀렉트박스 스크립트(공용)
+$(document).on('click', '.sbox a', function(){
+	$(this).siblings('ul').slideToggle();
+})
+
+
+// :: ksg : 페이지 상단 대형 이미지 슬라이드 (웹 버전)
+$('.mainImgSlider.webViewGroup').slick({
+	dots:true,
+	prevArrow:false,
+	nextArrow:false,
+	autoplay : true,
+	autoplaySpeed : 55000,
+});
+
+
+// :: ksg :  페이지 상단 대형 이미지 슬라이드 (모바일 버전)
+$('.mainImgSlider.mobileViewGroup').slick({
+	dots:true,
+	prevArrow:false,
+	nextArrow:false,
+	autoplay : true,
+	autoplaySpeed : 55000,
+	dotsClass: 'custom_paging',
+	customPaging: function (slider, i) {
+        console.log(slider);
+        return  (i + 1) + '/' + slider.slideCount;
+    }
+});
+
+</script>
+
+</body>
+</html>
