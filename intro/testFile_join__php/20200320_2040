@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_head.php';?> 
+
+<body>
+<div class="container">
+	<!-- :: 헤더 파트 -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_header.php';?> 
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_topMenu.php';?> 
+
+
+	<!-- :: 컨텐츠  파트 -->
+	<div class="contents">
+
+		<!-- :: 플로팅 내용 파트 -->
+		<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_rightFloat.php';?>
+
+		<!-- :: 주요 내용 섹션 -->
+		<div class="section userRegSect">
+			<div class="mainTitle">회원가입</div>
+			<!-- :: 회원정보 입력 파트 -->
+			<div class="listGroup">
+				<ul class="regInfoList">
+					<li class="infoGroup">
+						<!-- <div class="segmentTop f_bold f20">
+							주문자 정보
+						</div> -->
+						<div class="mainCon">
+							<table class="infoRegTable">
+								<tbody>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="이름을 입력해주세요.">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="아이디를 입력해주세요.">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="비밀번호를 입력해주세요.">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="비밀번호를 재입력해주세요.">
+									</td>
+								</tr>
+								<tr>
+									<td class="fontReset">
+										<input class="tbox short f16" placeholder="우편번호">
+										<a href="javascript:void(0);" class="bg_yellow f_white rimlessBtn tAlignC vAlignT short">검색</a>
+										<input class="tbox normal f16" placeholder="기본 주소">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="나머지 주소를 입력해주세요.">
+									</td>
+								</tr>
+								<tr>
+									<td class="fontReset">
+										<input class="tbox long f16" placeholder="휴대폰번호를 입력해주세요.">
+										<a href="javascript:void(0);" class="bg_yellow f_white rimlessBtn tAlignC vAlignT normal">인증하기</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="fontReset">
+										<input class="tbox long f16" placeholder="인증번호를 입력해주세요.">
+										<a href="javascript:void(0);" class="f_yellow plainBtn tAlignC vAlignT normal">재전송</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>
+											<input type="checkbox" name="checkAll">
+											<span class="f_semiBold">수신동의</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="이메일을 입력해주세요.">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>
+											<input type="checkbox" name="checkAll">
+											<span class="f_semiBold">수신동의</span>
+										</label>
+									</td>
+								</tr>
+								<!-- :: 정기배송 이용여부 파트 -->
+								<tr>
+									<td class="fontReset">
+										<div class="regularUsage">
+											<span class="title">정기배송 이용여부</span>
+											<div class="floatR">
+												<ul class="useSelector">
+													<li>
+														<a href="javascript:void(0);" class="script_regularTrue plainBtn">이용</a>
+													</li>
+													<li class="activated">
+														<a href="javascript:void(0);" class="script_regularFalse plainBtn">이용안함</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="mt9 regularInfoReg">
+											<ul class="script_regularDuration useSelector">
+												<li class="activated">
+													<a href="javascript:void(0);" class="plainBtn">3개월</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);" class="plainBtn">6개월</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);" class="plainBtn">9개월</a>
+												</li>
+											</ul>
+											<span class="sbox mt9">
+												<a href="javascript:void(0);" class="f16" id="bankName">은행 선택</a>
+												<ul>
+													<li onclick="setBankName('국민은행');">국민은행</li>
+													<li onclick="setBankName('우리은행');">우리은행</li>
+												</ul>
+											</span>
+											<input class="tbox normal f16 ml8" placeholder="계좌번호 입력" name="bankAccountNum">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div>
+											<label>
+												<input type="checkbox" name="checkAll">
+												<span class="">전체 동의</span>
+											</label>
+										</div>
+										<div class="mt13">
+											<label>
+												<input type="checkbox" name="checkAll">
+												<span class="">서비스 이용약관 (필수)</span>
+												<a href="javascript:void(0);" class="floatR f_underlined">내용보기</a>
+											</label>
+										</div>
+										<div class="mt13">
+											<label>
+												<input type="checkbox" name="checkAll">
+												<span class="">전자금융거래 이용약관 (필수)</span>
+												<a href="javascript:void(0);" class="floatR f_underlined">내용보기</a>
+											</label>
+										</div>
+										<div class="mt13">
+											<label>
+												<input type="checkbox" name="checkAll">
+												<span class="">개인정보 수집/이용약관 (필수)</span>
+												<a href="javascript:void(0);" class="floatR f_underlined">내용보기</a>
+											</label>
+										</div>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li>
+						<!-- :: 버튼 파트 -->
+						<a href="/nonghyup/intro/joinFinish" class="rimlessBtn full mt80 bg_yellow f_white f_bold">회원가입</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- :: 푸터 파트 -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_footer.php';?> 
+
+	<!-- :: 최하단 메뉴 선택바 파트 -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_mobileBottomMenu.php';?> 
+
+</div>
+<script>
+
+// // :: 셀렉트박스 스크립트(공용)
+// $(document).on('click', '.sbox a', function(){
+// 	$(this).siblings('ul').slideToggle();
+// })
+
+
+// :: 정기배송 이용여부 체크 스크립트
+$(document).on('click', '.script_regularFalse', function(){
+	
+	$('.regularUsage .useSelector a').parent('li').removeClass('activated');
+	$(this).parent('li').addClass('activated');
+	$('.infoRegTable .regularInfoReg').hide();
+});
+$(document).on('click', '.script_regularTrue', function(){
+	
+	$('.regularUsage .useSelector a').parent('li').removeClass('activated');
+	$(this).parent('li').addClass('activated');
+	$('.infoRegTable .regularInfoReg').show();
+});
+
+// :: 정기배송 기간 선택 스크립트 
+$(document).on('click', '.script_regularDuration a', function(){
+	
+	$('.regularInfoReg .useSelector a').parent('li').removeClass('activated');
+	$(this).parent('li').addClass('activated');
+});
+
+// // :: 셀렉트박스 내용 선택시, 셀렉트박스 리스트 닫기 스크립트(공용)
+// $(document).on('click', '.sbox ul li', function(){
+// 	$(this).parent('ul').slideToggle();
+// })
+</script>
+</body>
+</html>
