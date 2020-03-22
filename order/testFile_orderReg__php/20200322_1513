@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_head.php';?> 
+
+<body>
+<div class="container">
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_header.php';?> 
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_topMenu.php';?> 
+
+	<!-- :: 컨텐츠  파트 -->
+	<div class="contents">
+		<!-- :: 따라다니는 졸졸이(예정) -->
+		<div class="rightFloat">
+			<div class="recentView">
+				<div class="menuTitle">최근 본 상품</div>
+				<div class="f_red">1</div>
+				<ul class="imgList">
+					<li>
+						<a href="javascript:void(0);">
+							<img src="/nonghyup/common/img/recentView_1.png">
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<img src="/nonghyup/common/img/recentView_1.png">
+						</a>
+					</li>
+				</ul>
+				<div class="pageCount">
+					<span class="f_red">1</span>
+					<span>/</span>
+					<span>1</span>
+					<a href="javascript:void(0);" class="arrowPrev"></a>
+					<a href="javascript:void(0);" class="arrowNext"></a>
+				</div>
+			</div>
+			<a href="javascript:void(0);" class="bg_yellow rimlessBtn mt9 f14 f_semiBold tAlignC">1:1 문의하기</a>
+			<a href="javascript:void(0);" class="arrowUp"></a>
+		</div>
+		<!-- :: 주요 내용 섹션 -->
+		<div class="section orderRegSect">
+			<div class="mainTitle">주문하기</div>
+			<!-- :: 주문정보 입력 파트 -->
+			<div class="separatedLeft">
+				<div class="listGroup">
+					<ul class="regInfoList">
+						<li class="infoGroup">
+							<div class="segmentTop f_bold f20">
+								주문 상품 (3개)
+							</div>
+							<div class="mainCon">
+								<!-- :: 내부 리스트 파트 -->
+								<ul class="subList">
+									<li>
+										<div class="mainCon">
+											<div class="goodsInfo relative">
+												<div class="f16">새벽에 수확한 딸기 500g X 1</div>
+												<div class="f12 mt13">
+													<div>딸기 500g : 2~5팩 X 1개</div>
+													<div>-추가 50g X 1개</div>
+												</div>
+												<div class="absoluteMR f_bold f20">17,900원</div>
+											</div>
+										</div>
+										<!-- :: li 태그 하단 금액 파트 -->
+										<div class="calculationCon">
+											<div class="priceInfo">
+												<div class="f14">상품금액</div>
+												<div class="f20 f_bold mt10">17,900원</div>
+											</div>
+											<i class="iconCalc_plus"></i>
+											<div class="priceInfo">
+												<div class="f14">배송비</div>
+												<div class="f20 f_bold mt10">무료</div>
+											</div>
+											<i class="iconCalc_equal"></i>
+											<div class="priceInfo">
+												<div class="f14">주문금액</div>
+												<div class="f20 f_bold mt10">17,900원</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="mainCon">
+											<div class="goodsInfo relative">
+												<div class="f16">새벽에 수확한 딸기 500g X 1</div>
+												<div class="f12 mt13">
+													<div>딸기 500g : 2~5팩 X 1개</div>
+													<div>-추가 50g X 1개</div>
+												</div>
+												<div class="absoluteMR f_bold f20">17,900원</div>
+											</div>
+										</div>
+										<!-- :: li 태그 하단 금액 파트 -->
+										<div class="calculationCon">
+											<div class="priceInfo">
+												<div class="f14">상품금액</div>
+												<div class="f20 f_bold mt10">17,900원</div>
+											</div>
+											<i class="iconCalc_plus"></i>
+											<div class="priceInfo">
+												<div class="f14">배송비</div>
+												<div class="f20 f_bold mt10">무료</div>
+											</div>
+											<i class="iconCalc_equal"></i>
+											<div class="priceInfo">
+												<div class="f14">주문금액</div>
+												<div class="f20 f_bold mt10">17,900원</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<!-- :: 주문자 정보 파트 -->
+						<li class="infoGroup">
+							<div class="segmentTop f_bold f20">
+								주문자 정보
+							</div>
+							<div class="mainCon">
+								<table class="infoRegTable">
+									<colgroup>
+									<!-- :: ksg : 콜그룹 변경 -->
+										<col width="29%">
+										<col width="71%">
+									</colgroup>
+									<tbody>
+									<tr>
+										<th>이름</th>
+										<td>
+											<input class="tbox">
+										</td>
+									</tr>
+									<tr>
+										<th>연락처</th>
+										<td>
+											<input class="tbox">
+										</td>
+									</tr>
+									<tr>
+										<th>이메일</th>
+										<td>
+											<input class="tbox">
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<!-- :: 배송지 정보 파트 -->
+						<li class="infoGroup">
+							<div class="segmentTop f_bold f20">
+								배송지 정보
+							</div>
+							<div class="mainCon">
+								<!-- :: 주문자 정보 동일 버튼 -->
+								<a href="javascript:void(0);" class="plainBtn">주문자 정보와 동일</a>
+								<table class="infoRegTable mt20">
+									<colgroup>
+									<!-- :: ksg : 콜그룹 변경 -->
+										<col width="29%">
+										<col width="82%">
+									</colgroup>
+									<tbody>
+									<tr>
+										<th>수령인</th>
+										<td>
+											<input class="tbox">
+										</td>
+									</tr>
+									<tr>
+										<th>연락처</th>
+										<td>
+											<input class="tbox">
+										</td>
+									</tr>
+									<tr>
+										<th>배송주소</th>
+										<td>
+											<div class="combinedInputGroup">
+												<input  class="tbox" readonly placeholder="우편번호">
+												<a href="javascript:void(0);" class="bg_yellow f_white rimlessBtn tAlignC">검색</a>
+											</div>
+											<input class="tbox mt14" readonly placeholder="주소">
+											<input class="tbox mt14" placeholder="상세주소">
+										</td>
+									</tr>
+									<tr>
+										<th>배송 메세지</th>
+										<td>
+											<input class="tbox">
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<!-- :: 결제 수단 파트 -->
+						<li class="infoGroup">
+							<div class="segmentTop f_bold f20">
+								결제 수단
+							</div>
+							<!-- :: ksg_20200322_1205 open  -->
+							<div class="mainCon tAlignC">
+								<!-- :: 주문자 정보 동일 버튼 -->
+								<a href="javascript:void(0);" class="plainBtn methodSelector">
+									<i class="iconCard"></i>
+									<span>신용/체크카드</span>
+								</a>
+								<a href="javascript:void(0);" class="plainBtn methodSelector ml9">
+									<i class="iconCash"></i>
+									<span>무통장 입금</span>
+								</a>
+								<a href="javascript:void(0);" class="plainBtn methodSelector ml9">
+									<i class="iconPhone"></i>	
+									<span>휴대폰 결제</span>
+								</a>
+							</div>
+							<!-- :: ksg_20200322_1205 close  -->
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- :: 우측 주문정보 졸졸이 파트 -->
+			<div class="separatedRight rightFloat innerFloat">
+				<div class="boxTitle">
+					<span class="f17 f_bold">결제정보</span>
+					<span class="f14 ml3">(상품3개)</span>
+				</div>
+				<!-- :: 금액정보 표시 파트 -->
+				<div class="mt20 f14">
+					<div>
+						<span>총 상품 금액</span>
+						<span class="floatR f_bold">64,500원</span>
+					</div>
+					<div class="mt20">
+						<span>총 배송비</span>
+						<span class="floatR">2,500원</span>
+					</div>
+					<div class="mt20">
+						<span>총 할인금액</span>
+						<span class="floatR f_bold">0원</span>
+					</div>
+				</div>
+				<div class="bg_lightGrey mt20 priceBox">
+					<span class="f14">결제 예정 금액</span>
+					<span class="floatR f_red f24 f_bold">17,900 원</span>
+				</div>
+				<div class="mt16 f14">
+					<label>
+						<input class="tbox" type="checkbox" name="">
+						<span>개인정보 수집/이용약관 (필수)</span>
+					</label>
+					<a href="javascript:void(0);" class="floatR f_underlined">내용보기</a>
+				</div>
+				<div class="mt13 f14">
+					<label>
+						<input class="tbox" type="checkbox" name="">
+						<span>주문상품 및 주문 정보를 확인하였고, 결제 진행에</br> 동의합니다. (필수)</span>
+					</label>
+				</div>
+				<a href="/nonghyup/order/orderSpec" class="rimlessBtn bg_yellow f_white mt20 f_bold">결제하기</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- :: 푸터 파트 -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_footer.php';?> 
+
+</div>
+<script></script>
+</body>
+</html>
