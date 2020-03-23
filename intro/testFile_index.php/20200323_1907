@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_head.php';?> 
+
+<body>
+<div class="container">
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_header.php';?> 
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_topMenu.php';?> 
+
+	<!-- :: 컨텐츠  파트 -->
+	<div class="contents">
+
+		<!-- :: 플로팅 내용 파트 -->
+		<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_rightFloat.php';?> 
+
+		<!-- :: 주요 내용 섹션 -->
+		<div class="section loginSect">
+			<div class="mainTitle">로그인</div>
+			<!-- :: 회원정보 입력 파트 -->
+			<div class="listGroup">
+				<ul class="regInfoList">
+					<li class="infoGroup">
+						<!-- <div class="segmentTop f_bold f20">
+							주문자 정보
+						</div> -->
+						<div class="mainCon">
+							<table class="infoRegTable">
+								<tbody>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="아이디를 입력해주세요" value="우장춘">
+									</td>
+								</tr>
+									<td>
+										<input class="tbox full" placeholder="비밀번호를 입력해주세요." value="">
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										<label>
+											<input type="checkbox" name="checkAll">
+
+
+											<!-- :: ksg_20200323_1857 single  -->
+											<span class="f_semiBold">아이디 저장</span>
+
+
+
+											
+											<div class="floatR">
+												<a href="/nonghyup/intro/findID" class="f_underlined f14">아이디˙비밀번호 찾기</a>
+												<a href="/nonghyup/intro/join" class="f_underlined f14 ml13">회원가입</a>
+											</div>
+										</label>
+									</td>
+								</tr>
+								
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li>
+						<!-- :: 버튼 파트 -->
+						<a href="/nonghyup/main" class="rimlessBtn full bg_yellow f_white f_bold">로그인</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- :: 푸터 파트 -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_footer.php';?> 
+
+</div>
+<script>
+
+// :: 셀렉트박스 스크립트(공용)
+$(document).on('click', '.sbox a', function(){
+	$(this).siblings('ul').slideToggle();
+})
+
+
+</script>
+</body>
+</html>
