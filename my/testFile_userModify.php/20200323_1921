@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_head.php';?> 
+
+<body>
+<div class="container">
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_header.php';?> 
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_topMenu.php';?> 
+
+	<!-- :: 컨텐츠  파트 -->
+	<div class="contents">
+
+		<!-- :: 플로팅 내용 파트 -->
+		<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_rightFloat.php';?> 
+
+		<!-- :: 주요 내용 섹션 -->
+
+
+
+		<!-- :: ksg_20200323_1914 single  -->
+		<div class="section userRegSect modifyMod">
+
+
+
+
+			<div class="mainTitle">내 정보 수정</div>
+			<!-- :: 회원정보 입력 파트 -->
+			<div class="listGroup">
+				<ul class="regInfoList">
+					<li class="infoGroup">
+						<!-- <div class="segmentTop f_bold f20">
+							주문자 정보
+						</div> -->
+						<div class="mainCon">
+							<table class="infoRegTable">
+								<tbody>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="이름을 입력해주세요." value="우장춘">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" readonly placeholder="아이디를 입력해주세요." value="watermeloner">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="비밀번호를 입력해주세요." value="">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="비밀번호를 재입력해주세요.">
+									</td>
+								</tr>
+								<tr>
+									<td class="fontReset">
+										<input class="tbox short f16" placeholder="우편번호" value="000">
+										<a href="javascript:void(0);" class="bg_yellow f_white rimlessBtn tAlignC vAlignT short">검색</a>
+										<input class="tbox normal f16" placeholder="기본 주소" value="서울시 마포구 마포대로 36">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="나머지 주소를 입력해주세요." value="상가 건물 2층">
+									</td>
+								</tr>
+								<tr>
+									<td class="fontReset">
+										<input class="tbox long f16" placeholder="휴대폰번호를 입력해주세요." value="01009876543">
+										<a href="javascript:void(0);" class="bg_yellow f_white rimlessBtn tAlignC vAlignT normal">재인증하기</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="fontReset">
+										<input class="tbox long f16" placeholder="인증번호를 입력해주세요.">
+										<a href="javascript:void(0);" class="f_yellow plainBtn tAlignC vAlignT normal">재전송</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>
+											<input type="checkbox" name="checkAll">
+											<span class="f_semiBold">수신동의</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input class="tbox full" placeholder="이메일을 입력해주세요." value="dragonkwaaa@hotmail.com">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label>
+											<input type="checkbox" name="checkAll">
+											<span class="f_semiBold">수신동의</span>
+										</label>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li>
+						<!-- :: 버튼 파트 -->
+						<div class="btnGroup">
+							<a href="javascript:void(0);" class="plainBtn cancelBtn">취소</a>
+							<a href="javascript:void(0);" class="rimlessBtn regBtn">저장</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- :: 푸터 파트 -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_footer.php';?> 
+
+</div>
+<script>
+
+// :: 셀렉트박스 스크립트(공용)
+$(document).on('click', '.sbox a', function(){
+	$(this).siblings('ul').slideToggle();
+})
+
+
+</script>
+</body>
+</html>
