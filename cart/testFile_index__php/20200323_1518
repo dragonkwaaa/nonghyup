@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_head.php';?> 
+
+<body>
+<div class="container">
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_header.php';?> 
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_topMenu.php';?> 
+	<!-- :: 컨텐츠  파트 -->
+	<div class="contents">
+		
+		<!-- :: 플로팅 내용 파트 -->
+		<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_rightFloat.php';?> 
+
+		<!-- :: 주요 내용 섹션 -->
+		<div class="section cartSect">
+			<div class="mainTitle">장바구니</div>
+			<!-- 정기배송/일반배송 탭 선택지 파트 -->
+			<ul class="findPageTab deliveryTypeTab">
+				<li>
+					<a href="../cart/regular">정기배송</a>
+				</li>
+				<li class="activated">
+					<a href="../cart/">일반배송</a>
+				</li>
+			</ul>
+			<!-- :: 상품 리스트 파트 -->
+			<div class="separatedLeft cartItemGroup">
+				<div class="listGroup">
+					<div class="listTop">
+						<label>
+							<input type="checkbox" name="checkAll">
+							<span class="f_semiBold">전체선택</span>
+						</label>
+					</div>
+					<ul class="goodsList">
+						<li>
+							<div class="segmentHeadLine f12">
+								새벽에 수확한 딸기 500g
+							</div>
+							<div class="segmentTop">
+								<label>
+									<input type="checkbox" name="">
+									<span>새벽에 수확한 딸기 500g</span>
+								</label>
+								<a href="javascript:void(0);" class="deleteBtn absoluteR"></a>
+							</div>
+							<div class="mainCon imgGoods">
+								<img src="/nonghyup/common/img/goodsTag_1.png" class="goodsImg separatedLeft"></img>
+								<div class="goodsInfo separatedRight">
+
+
+
+									<!-- :: ksg_202003231353 open  -->
+									<!-- <div class="f16 f_semiBold">새벽에 수확한 딸기 500g</div> -->
+									<div class="f20 f_semiBold mt8">
+										<span>17,900원</span>
+										<span class="f14">(1개)</span>	
+									</div>
+									<!-- :: ksg_202003231353 close  -->
+
+
+
+
+
+								</div>
+								<a href="javascript:void(0);" class="changeOptionBtn mt12 plainBtn">옵션/수량</a>
+							</div>
+							<!-- :: li 태그 하단 금액 파트 -->
+							<div class="calculationCon cartCalc">
+								<div>
+									<div>
+										<span class="f13">상품금액</span>
+										<span class="floatR f_bold f13">17,900원</span>
+									</div>
+									<div class="mt20">
+										<span class="f13">배송비</span>
+										<span class="floatR f13">무료</span>
+									</div>
+									<div class="mt20">
+										<span class="lh20 f13">주문금액</span>
+										<span class="floatR f_bold f20">17,900원</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="segmentHeadLine f12">
+								새벽에 수확한 딸기 500g
+							</div>
+							<div class="segmentTop">
+								<label>
+									<input type="checkbox" name="">
+									<span>새벽에 수확한 딸기 500g</span>
+								</label>
+								<a href="javascript:void(0);" class="deleteBtn absoluteR"></a>
+							</div>
+							<div class="mainCon imgGoods">
+								<img src="/nonghyup/common/img/goodsTag_1.png" class="goodsImg separatedLeft"></img>
+								<div class="goodsInfo separatedRight">
+
+
+
+									<!-- :: ksg_202003231353 open  -->
+									<!-- <div class="f16 f_semiBold">새벽에 수확한 딸기 500g</div> -->
+									<div class="f20 f_semiBold mt8">
+										<span>17,900원</span>
+										<span class="f14">(1개)</span>	
+									</div>
+									<!-- :: ksg_202003231353 close  -->
+
+
+
+								</div>
+								<a href="javascript:void(0);" class="changeOptionBtn mt12 plainBtn">옵션/수량</a>
+							</div>
+							<!-- :: li 태그 하단 금액 파트 -->
+							<div class="calculationCon cartCalc">
+								<div>
+									<div>
+										<span class="f13">상품금액</span>
+										<span class="floatR f_bold f13">17,900원</span>
+									</div>
+									<div class="mt20">
+										<span class="f13">배송비</span>
+										<span class="floatR f13">무료</span>
+									</div>
+									<div class="mt20">
+										<span class="lh20 f13">주문금액</span>
+										<span class="floatR f_bold f20">17,900원</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+
+
+						<!-- :: 리스트에 아무 내용도 없을 때 나올 li 태그. -->
+						<!-- <li class="emptyList">
+							등록된 찜 목록이 없습니다.
+						</li> -->
+
+
+
+
+					</ul>
+					<!-- :: 선택 관련 버튼 파트 -->
+					<div class="btnGroup mt20">
+						<a href="javascript:void(0);" class="plainBtn">전체선택</a>
+						<a href="javascript:void(0);" class="plainBtn ml7">선택삭제</a>
+					</div>
+					<!-- :: 페이징 파트 -->
+					<ul class="pagingGroup">
+						<li>
+							<a href="javascript:void(0);" class="pagingPrev"></a>
+						</li>
+						<li class="on">
+							<a href="javascript:void(0);" class="">1</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="on">2</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="">3</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="">4</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="">5</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="pagingNext"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- :: 장바구니 결제정보 졸졸이 파트 -->
+			<div class="separatedRight rightFloat innerFloat">
+				<div class="boxTitle">
+					<span class="f17 f_bold">결제정보</span>
+					<span class="f14 ml3">(상품3개)</span>
+				</div>
+				<!-- :: 금액정보 표시 파트 -->
+				<div class="mt20 f14">
+					<div>
+						<span>총 상품 금액</span>
+						<span class="floatR f_bold">64,500원</span>
+					</div>
+					<div class="mt20">
+						<span>총 배송비</span>
+						<span class="floatR">2,500원</span>
+					</div>
+					<div class="mt20">
+						<span>총 할인금액</span>
+						<span class="floatR f_bold">0원</span>
+					</div>
+				</div>
+				<div class="bg_lightGrey mt20 priceBox">
+					<span class="f14">결제 예정 금액</span>
+					<span class="floatR f_red f24 f_bold">17,900 원</span>
+				</div>
+				<a href="/nonghyup/order/orderReg" class="rimlessBtn bg_yellow f_white mt20 f_bold">주문하기</a>
+			</div>
+			<!-- :: 장바구니 담긴 상품 없을때 단독으로 표시되는 파트 -->
+			<div class="emptyItemDisplay tAlignC">
+				<i class="emptyCartIcon"></i>
+				<div class="mt40 f24">장바구니에 담긴 상품이 없습니다.</div>
+				<a href="/nonghyup/main" class="rimlessBtn">쇼핑하러 가기</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- :: 푸터 파트 -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_footer.php';?> 
+
+</div>
+<!-- :: 비밀번호 재설정 팝업 -->
+<div class="popup changeOptionPop">
+	<a href="javascript:void(0);" class="closePopBtn absoluteR"></a>
+	<div class="popupTitleBox changeoptionGroup">
+		<div class="mainTitle tAlignL">새벽에 수확한 딸기</div>
+	</div>
+	<ul class="regInfoList changeoptionGroup">
+		<li class="infoGroup">
+			<div class="mainCon">
+				<table class="infoRegTable changeoptionGroup">
+					<colgroup>
+						<col width="156">
+						<col width="485">
+					</colgroup>
+					<tbody>
+					<tr>
+						<th>옵션선택</th>
+						<td>
+							<span class="sbox">
+								<a href="javascript:void(0);">은행 선택</a>
+								<ul>
+									<li>국민은행</li>
+									<li>우리은행</li>
+								</ul>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th>수량</th>
+						<td>
+							<div class="quantityBox">
+								<a href="javascript:void(0);" class="decreaseIcon">-</a>
+								<input value="1" class="quantity">
+								<a href="javascript:void(0);" class="increaseIcon">+</a>
+							</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<div class="tAlignR mt40">
+					<span class="f14 vAlignM">총 합계금액</span>
+					<span class="f_red f24 f_bold vAlignM ml14">17,900 원</span>
+				</div>
+			</div>
+		</li>
+		<li>
+		<div class="btnGroup">
+			<a href="javascript:void(0);" class="plainBtn cancelBtn f24">취소</a>
+			<a href="javascript:void(0);" class="changePW rimlessBtn regBtn f24">변경</a>
+		</div>
+		</li>
+	</ul>
+</div>
+
+<script>
+
+// :: 비밀번호 변경 팝업 오픈 스크립트
+$(document).on('click', '.changeOptionBtn', function(){
+	$('.popup.changeOptionPop').show();
+	$('.container').addClass('overlay');
+});
+
+// :: 팝업 닫기 스크립트(공용)
+$(document).on('click', '.closePopBtn', function(){
+	$('.popup').hide();
+	$('.container').removeClass('overlay');
+});
+
+// :: 셀렉트박스 스크립트(공용)
+$(document).on('click', '.sbox a', function(){
+	$(this).siblings('ul').slideToggle();
+})
+
+</script>
+
+</body>
+</html>
