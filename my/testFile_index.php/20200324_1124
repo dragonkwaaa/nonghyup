@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_head.php';?> 
+
+<body>
+<div class="container">
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_header.php';?> 
+
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_topMenu.php';?> 
+
+
+
+
+	<!-- :: 컨텐츠  파트 -->
+	<div class="contents">
+
+		<!-- :: 플로팅 내용 파트 -->
+		<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_rightFloat.php';?> 
+
+		<!-- :: 주요 내용 섹션 -->
+		<div class="section myMainSect">
+			<div class="mainTitle">마이페이지</div>
+			<div class="myMenuBox">
+				<div class="menuBoxHeadLine relative">
+					<div class="greetingText">
+						<span>안녕하세요</span>
+						<span class="userName">강동원</span>
+						<span>님!</span>
+					</div>
+					<div class="btnBox absoluteMR">
+						<a href="/nonghyup/delivery/regular" class="plainBtn">정기배송 관리</a>
+						<a href="/nonghyup/my/userModify" class="plainBtn ml10">회원정보 수정</a>
+					</div>
+				</div>
+				<div class="menuBoxMainCon">
+					<a href="/nonghyup/delivery/" class="cardBox">
+						<i class="cardIconDelivery"></i>
+						<span>주문배송조회</span>
+					</a>
+					<a href="javascript:void(0);" class="cardBox">
+						<i class="cardIconRefund"></i>
+						<span>취소/교환/반품 조회</span>
+					</a>
+					<a href="/nonghyup/my/favorites" class="cardBox">
+						<i class="cardIconFavorite"></i>
+						<span>찜 목록</span>
+					</a>
+					<a href="/nonghyup/my/myPost" class="cardBox">
+						<i class="cardIconMyPost"></i>
+						<span>나의 글 목록</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- :: 푸터 파트 -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] .  '/nonghyup/common/pages/testFile_footer.php';?> 
+</div>
+<script></script>
+</body>
+</html>
