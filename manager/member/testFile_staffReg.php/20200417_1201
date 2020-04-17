@@ -1,0 +1,95 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/manager/common/pages/head.php';
+$mCode					=	'04';
+$lCode					=	'0404';
+?>
+<body>
+
+<div class="container">
+	<!-- gnb -->
+	<?php include $_SERVER['DOCUMENT_ROOT'] . '/manager/common/pages/header.php'; ?>
+	<div class="wrapper">
+		<!-- lnb -->
+		<?php include $_SERVER['DOCUMENT_ROOT'] . '/manager/member/pages/member_left.php'; ?>
+		<div class="contents">
+			<div class="set_field">
+				<div class="field_title">
+					<span class="title_mark">■ 직원정보</span>
+					<span class="f_main tip">(*)는 필수 입력 사항입니다.</span>
+				</div>
+				<table class="set_table">
+					<colgroup>
+						<col width="120">
+						<col width="*">
+					</colgroup>
+					<tbody>
+					<tr>
+						<th>
+							<span>아이디</span>
+							<span class="f_main">*</span>
+						</th>
+						<td><input class="tbox long" value=""></td>
+					</tr>
+					<tr>
+						<th>
+							<span>비밀번호</span>
+							<span class="f_main">*</span>
+						</th>
+						<td><input class="tbox long" value=""></td>
+					</tr>
+					<tr>
+						<th>
+							<span>이름</span>
+							<span class="f_main">*</span>
+						</th>
+						<td>
+							<input class="tbox" value="">
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<span>전화번호</span>
+							<span class="f_main">*</span>
+						</th>
+						<td><input class="tbox long" value=""></td>
+					</tr>
+					<tr>
+						<th>
+							<span>권한</span>
+							<span class="f_main">*</span>
+						</th>
+						<td>
+							<label>
+								<input type="checkBox" name="staffAuthority" value="0" checked="">
+								<span>환경설정</span>
+							</label>
+							<label class="ml10">
+								<input type="checkBox" name="staffAuthority" value="1">
+								<span>상품관리</span>
+							</label>
+							<label class="ml10">
+								<input type="checkBox" name="staffAuthority" value="2">
+								<span>주문관리</span>
+							</label>
+							<label class="ml10">
+								<input type="checkBox" name="staffAuthority" value="3">
+								<span>회원관리</span>
+							</label>
+							<label class="ml10">
+								<input type="checkBox" name="staffAuthority" value="4">
+								<span>게시판관리</span>
+							</label>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="btn_group">
+				<a href="javascript:insert_goods()" class="btn col_main">등록</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+</script>
+</body>
+</html>
